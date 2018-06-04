@@ -84,7 +84,7 @@ Hints:
 
 Hints:
 + You will want to use either the ````which( )```` or ````subset( )```` functions.
-+ You will have to make use of logical operators `>=`, `<=`, and `&`. For a review of these, see the [logical operators](https://github.com/aazaff/startLearn.R/blob/master/beginnerConcepts.md#r-as-a-fancy-scientific-calculator) and [subsetting with logical operators](https://github.com/aazaff/startLearn.R/blob/master/intermediateConcepts.md#subscripting-and-subsetting-with-logicals) sections of the R Tutorial.
++ You will have to make use of logical operators `>=`, `<=`, and `&`. For a review of these, see the [logical operators](https://github.com/naheim/startLearn.R/blob/master/beginnerConcepts.md#r-as-a-fancy-scientific-calculator) and [subsetting with logical operators](https://github.com/naheim/startLearn.R/blob/master/intermediateConcepts.md#subscripting-and-subsetting-with-logicals) sections of the R Tutorial.
 
 3) Repeat the above processes (download and subset) for the following geologic periods. The Cretaceous, Jurassic, Triassic (you don't have to download it twice), Permian, Carboniferous, Devonian, Silurian, and Ordovician. Show your code, but do not show me the downloaded data.
 

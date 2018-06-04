@@ -1,6 +1,6 @@
 ## Diversity Partitioning Across Mass Extinction Boundaries
 
-Today we are going to look at Biodiversity Partitioning across mass extinction boundaries. We'll be using the Alpha, Beta, and Gamma framework that we discussed in [lecture](http://teststrata.geology.wisc.edu/teachPaleobiology/LectureSlides/Ordovician03282016.pdf). You can go back and review those slides if you have forgotten or you can read this [review paper](http://teststrata.geology.wisc.edu/teachPaleobiology/AdditionalReading/AlphaBetaGamma.pdf) in the [Additional Readings](https://github.com/aazaff/teachPaleobiology/blob/master/AdditionalReading/AdditionalReading.md#a-list-of-additional-readings) section. 
+Today we are going to look at Biodiversity Partitioning across mass extinction boundaries. We'll be using the Alpha, Beta, and Gamma framework that we discussed in [lecture](http://teststrata.geology.wisc.edu/teachPaleobiology/LectureSlides/Ordovician03282016.pdf). You can go back and review those slides if you have forgotten or you can read this [review paper](http://teststrata.geology.wisc.edu/teachPaleobiology/AdditionalReading/AlphaBetaGamma.pdf) in the [Additional Readings](https://github.com/naheim/teachPaleobiology/blob/master/AdditionalReading/AdditionalReading.md#a-list-of-additional-readings) section. 
 
 Be warned that the review paper discusses both **MULTIPLICATIVE** and **ADDITIVE** diversity partitioning. We are only interested in **ADDITIVE** partitioning today.
 
@@ -8,7 +8,7 @@ Be warned that the review paper discusses both **MULTIPLICATIVE** and **ADDITIVE
 
 #### Step 1:
 
-Open R and load in the following modules of the beta version of the University of Wisconsion's [paleobiologyDatabase.R](https://github.com/aazaff/paleobiologyDatabase.R) package using the ````source( )```` function.
+Open R and load in the following modules of the beta version of the University of Wisconsion's [paleobiologyDatabase.R](https://github.com/naheim/paleobiologyDatabase.R) package using the ````source( )```` function.
 
 ````R
 source("https://raw.githubusercontent.com/aazaff/paleobiologyDatabase.R/master/communityMatrix.R")

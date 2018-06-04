@@ -23,7 +23,7 @@ The course is split into two phases. In the first phase, we discuss the ontogeny
 
 In addition to the theoretical framework discussed above, this course places a strong emphasis on practical skills, especially data analytics. This includes downloading data sets, entering and editing data, and statistical analysis of those data. Ideally, at the end of this course, you will be able to construct and test your own paleobiological hypotheses using available online databases.
 
-In particular, we will use the [R statistical software](https://github.com/aazaff/startLearn.R/blob/master/README.md), the [Paleobiology Database](https://paleobiodb.org/#/), [Github](https://github.com), and the [Macrostrat Database](https://macrostrat.org/). All of these services are free, available online, and work with Mac, Windows, or Linux systems. R is an especially powerful tool that is highly sought after in the [job market](http://www.indeed.com/jobtrends/%22R%22%2C+%22CPA%22%2C+%22Mechanic%22%2C+%22MBA%22.html). Companies like Google, Microsoft, and Amazon, as well as most major Universities and graduate programs are looking for R and Git proficiency.
+In particular, we will use the [R statistical software](https://github.com/naheim/startLearn.R/blob/master/README.md), the [Paleobiology Database](https://paleobiodb.org/#/), [Github](https://github.com), and the [Macrostrat Database](https://macrostrat.org/). All of these services are free, available online, and work with Mac, Windows, or Linux systems. R is an especially powerful tool that is highly sought after in the [job market](http://www.indeed.com/jobtrends/%22R%22%2C+%22CPA%22%2C+%22Mechanic%22%2C+%22MBA%22.html). Companies like Google, Microsoft, and Amazon, as well as most major Universities and graduate programs are looking for R and Git proficiency.
 
 ## LEARNING OUTCOMES
 
@@ -104,7 +104,7 @@ WED: Jan 27 | [Reading 2](/ReadingExercises/ReadingExercises.md) | 1. Ontogeny 2
 MON: Feb 01 | [Lab 2](/LabExercises.md) | 1. Review Reading 2. Abiogenesis 3. Genetic drift and neutral theory 4. Molecular clocks
 WED: Feb 03 | [Reading 3](/ReadingExercises/ReadingExercises.md) | 1. Sexual Selection 2. Geographic models of speciation
 MON: Feb 08 | [Lab 3](/LabExercises.md) | 1. Review Reading 2. Ecological niche 3. Ecological competition and facilitation 4. Ecological gradients
-WED: Feb 10 | [Reading 4](https://github.com/aazaff/teachPaleobiology/blob/master/ReadingExercises/ReadingExercises.md) | <strike>1. Anatomical and behavioral mechanisms of dispersal</strike> 2. Niche conservatism 3. Common patterns of species distribution
+WED: Feb 10 | [Reading 4](https://github.com/naheim/teachPaleobiology/blob/master/ReadingExercises/ReadingExercises.md) | <strike>1. Anatomical and behavioral mechanisms of dispersal</strike> 2. Niche conservatism 3. Common patterns of species distribution
 MON: Feb 15 | [Lab 4](/LabExercises.md) | 1. Review Reading 2. Determinants of extinction 3. Pseudoextinction
 WED: Feb 17 | [Reading 5](/ReadingExercises/ReadingExercises.md) | 1. Measuring biodiversity 2. Measuring extinction 3. Measuring origination 4. Measuring evenness
 MON: Feb 22 | [Lab 5](/LabExercises.md) | 1. Review Reading 2. Review and catch-up session

@@ -72,7 +72,7 @@ OrderMatrix<-presenceMatrix(MacroPBDB,SampleDefinition="unit_name",TaxonRank="or
 
 2) A good candidate for classification as a lagerstätten should have a large number of genera that are relatively rare. Using the ````GenusMatrix```` column to find out how many samples each genus occurs in. Show the code you used. Name your output ````GenusFrequencies````.
 
-3) What is the necessary code to make a [frequency barplot](https://github.com/aazaff/startLearn.R/blob/master/expertConcepts.md#describing-distributions-with-statistics) of the ````GenusFrequencies````?
+3) What is the necessary code to make a [frequency barplot](https://github.com/naheim/startLearn.R/blob/master/expertConcepts.md#describing-distributions-with-statistics) of the ````GenusFrequencies````?
 
 4) After looking at this barplot, you should see a familiar paleobiological pattern. What do we call this type of curved distribution in paleobiology and ecology. [Hint: Think back to the lectures]
 

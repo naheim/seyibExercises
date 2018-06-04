@@ -35,9 +35,9 @@ There are four columns in ````DataPBDB```` relevant to the age of an organism: `
 
 1) What do the max_ma and min_ma columns of ````DataPBDB```` represent? If you do not intuitively know, you can always check the [Paleobiology Database API documentation](https://paleobiodb.org/data1.2/occs/list_doc.html).
 
-2) What is oldest age of each genus? [[Hint](https://github.com/aazaff/startLearn.R/blob/master/intermediateConcepts.md#direct-subsetting-with-functionals): Use the ````tapply(  )```` and ````max(  )```` functions we've used in previous labs]. Show the code you would use to find out.
+2) What is oldest age of each genus? [[Hint](https://github.com/naheim/startLearn.R/blob/master/intermediateConcepts.md#direct-subsetting-with-functionals): Use the ````tapply(  )```` and ````max(  )```` functions we've used in previous labs]. Show the code you would use to find out.
 
-3) What is the youngest age of each genus? [[Hint](https://github.com/aazaff/startLearn.R/blob/master/intermediateConcepts.md#direct-subsetting-with-functionals): Use the ````tapply(  )```` and ````min(  )```` functions we've used in previous labs]. Show the code you would use to find out.
+3) What is the youngest age of each genus? [[Hint](https://github.com/naheim/startLearn.R/blob/master/intermediateConcepts.md#direct-subsetting-with-functionals): Use the ````tapply(  )```` and ````min(  )```` functions we've used in previous labs]. Show the code you would use to find out.
 
 4) Find which genus has the most occurrences in the dataset [Hint: Use the ````table( )```` function!]. What code did you use?
 
@@ -81,7 +81,7 @@ Notice that we got a lower mean, 22.84237, this time compared to our original me
 
 ##### Step 3
 
-Now, remember the [Law of Large Numbers](https://github.com/aazaff/startLearn.R/blob/master/expertConcepts.md#the-law-of-large-numbers). We need to repeat this process many times to converge on a long term solution. For that we'll need to use a ````for(  )```` loop.
+Now, remember the [Law of Large Numbers](https://github.com/naheim/startLearn.R/blob/master/expertConcepts.md#the-law-of-large-numbers). We need to repeat this process many times to converge on a long term solution. For that we'll need to use a ````for(  )```` loop.
 
 ````R
 # Create a vector from 1 to 1,000, this is how many times we will repeat the resampling procedure
@@ -109,7 +109,7 @@ head(ResampledMeans)
 mean(sample(Lucina[,"paleolng"],length(Lucina[,"paleolng"]),replace=TRUE))
 ````
 
-2) Plot a [kernel density](https://github.com/aazaff/startLearn.R/blob/master/expertConcepts.md#describing-distributions-with-statistics) graph of ````ResampledMeans````. Show your code. Does the distribution look approximately Gaussian? Explain why you think it does or does not.
+2) Plot a [kernel density](https://github.com/naheim/startLearn.R/blob/master/expertConcepts.md#describing-distributions-with-statistics) graph of ````ResampledMeans````. Show your code. Does the distribution look approximately Gaussian? Explain why you think it does or does not.
 
 3) Find the mean of ````ResampledMeans````, is it similar to the mean of the original data?
 

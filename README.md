@@ -13,7 +13,7 @@ Resources | Description
 [Additional Reading](/AdditionalReading/AdditionalReading.md) | A set of review papers that provide additional insight into various class topics.
 [Grant Proposal](/GSAProposals/ProposalInformation.md) | Instructions and example research proposals.
 [Lab Exercises](/LabExercises.md) | The weekly lab assignments.
-[R Tutorial](https://github.com/aazaff/startLearn.R/blob/master/README.md) | Resources for developing your R skills like a pro.
+[R Tutorial](https://github.com/naheim/startLearn.R/blob/master/README.md) | Resources for developing your R skills like a pro.
 [Git Tutorial](/GitTutorial/gitTutorial.md) | Resource for developing your git skills like a pro.
 
 Additionally, the weekly tests, as oultined in the [syllabus](/CourseDocuments/paleobiologySyllabus.md), can be accessed at [learnuw.wisc.edu](https://learnuw.wisc.edu).

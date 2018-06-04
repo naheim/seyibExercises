@@ -88,7 +88,7 @@ Many ordination techniques are based (either operationally or theoretically) on 
 
 The Jaccard index is the simplest Similarity index. It is the intersection of two samples divided by the union of two samples. In other words, the number of genera shared between two samples, divided by the total number of (unique) genera in both samples. Or put even another way, it is the percentage of genera shared between two samples. 
 
-1) Using your own custom R code, find the Jaccard similarity of the Pleistocene and Miocene "samples" in your PresencePBDB matrix. It is possible to code this entirely using only functions discussed in the [R Tutorial](https://github.com/aazaff/startLearn.R/blob/master/README.md). The key is to use ````apply( )````, ````sum( )````, ````table( )````, and judicious use of matrix subscriptng.
+1) Using your own custom R code, find the Jaccard similarity of the Pleistocene and Miocene "samples" in your PresencePBDB matrix. It is possible to code this entirely using only functions discussed in the [R Tutorial](https://github.com/naheim/startLearn.R/blob/master/README.md). The key is to use ````apply( )````, ````sum( )````, ````table( )````, and judicious use of matrix subscriptng.
 
 2) How can you convert your similarity index into a **distance**?
 
@@ -118,7 +118,7 @@ The definition of the poles can be based on the calculation of a simlarity index
 
 ## Correspondence Analysis
 
-The next form of ordination is known as corresponence analysis, also known as reciprocal averaging (like we discussed in [lecture](https://github.com/aazaff/teachPaleobiology/blob/master/LectureSlides/CommonDistributions02102016.pdf)). There are three primary varietys of correspondence analysis: correspondence analysis, detrended correspondence analysis, and canonical (constrained) correspondence analysis. 
+The next form of ordination is known as corresponence analysis, also known as reciprocal averaging (like we discussed in [lecture](https://github.com/naheim/teachPaleobiology/blob/master/LectureSlides/CommonDistributions02102016.pdf)). There are three primary varietys of correspondence analysis: correspondence analysis, detrended correspondence analysis, and canonical (constrained) correspondence analysis. 
 
 Since we already explained the basics of reciprocal averaging in class, I will not go into further detail on the underlying theory behind correspondence analysis. Instead, let us examine the difference between correspondence analysis and detrended correspondence analysis.
 

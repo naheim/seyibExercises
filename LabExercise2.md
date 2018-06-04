@@ -34,7 +34,7 @@ Ammonites<-read.csv(URL,row.names=1)
 
 #### Step 3
 
-Your basic workfow should be to first qualitatively (i.e., visually) decide which specimens you think belong to different species. Then you should subset the Ammonites array in R into several arrays based on your hypothesized species groupings. Using the techniques from the [expertConcepts](https://github.com/aazaff/startLearn.R/blob/master/expertConcepts.md) of the R tutorial (Lab 1), you can visualize, describe, or statistically test the different size and shape distributions of your hypothesized species. 
+Your basic workfow should be to first qualitatively (i.e., visually) decide which specimens you think belong to different species. Then you should subset the Ammonites array in R into several arrays based on your hypothesized species groupings. Using the techniques from the [expertConcepts](https://github.com/naheim/startLearn.R/blob/master/expertConcepts.md) of the R tutorial (Lab 1), you can visualize, describe, or statistically test the different size and shape distributions of your hypothesized species. 
 
 You will find the following articles extremely helpful, particularly for question 4: [An introducton to ammonites](http://www.ukfossils.co.uk/guides/ammonites.html) and [Shell Anatomy and Diversity](https://en.wikipedia.org/wiki/Ammonoidea#Shell_anatomy_and_diversity).
 
@@ -110,7 +110,7 @@ ProcrustesPlethodon<-gpagen(plethodon[["land"]])
 
 #### Step 5
 
-The next step we need to do is a **principle components analysis** (PCA) on the transformed data. PCA is one of the most common forms of **multivariate**. A large part of this class will be about various forms of multivariate analyses. We will go more into the underlying theory of multivariate analyses - in general - in later labs. [For now, we'll just explain the basic idea of PCA](https://github.com/aazaff/teachPaleobiology/blob/master/PCATutorial.md).
+The next step we need to do is a **principle components analysis** (PCA) on the transformed data. PCA is one of the most common forms of **multivariate**. A large part of this class will be about various forms of multivariate analyses. We will go more into the underlying theory of multivariate analyses - in general - in later labs. [For now, we'll just explain the basic idea of PCA](https://github.com/naheim/teachPaleobiology/blob/master/PCATutorial.md).
 
 Because it can be used for a variety of purposes, not just morphometrics, there are several packages and functions for running a PCA in R. However, we will stick with the function built into the geomorph package, ````plotTangentSpace( )````.
 

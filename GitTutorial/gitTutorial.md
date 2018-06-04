@@ -1,6 +1,6 @@
 # Introduction
 
-The following is a revised version of the git and GitHub tutorial. You can still access the [old git tutorial](https://github.com/aazaff/teachPaleobiology/blob/master/GitTutorial/GitStarted.md) and list of [basic git commands](https://github.com/aazaff/teachPaleobiology/blob/master/GitTutorial/BasicGitCommands.md). However, everything you need to get started with git (other than installation) is included in this tutorial.
+The following is a revised version of the git and GitHub tutorial. You can still access the [old git tutorial](https://github.com/naheim/teachPaleobiology/blob/master/GitTutorial/GitStarted.md) and list of [basic git commands](https://github.com/naheim/teachPaleobiology/blob/master/GitTutorial/BasicGitCommands.md). However, everything you need to get started with git (other than installation) is included in this tutorial.
 
 ## Installion and Setup
 
@@ -35,7 +35,7 @@ Step 3: Write your answers in the new file. Scroll down to the bottom of the pag
 
 <a href="url"><img src="/GitTutorial/gitTutorial/Figure2.png" align="center" height="450" width="500" ></a>
 
-Step 4: Now that you have successfully commited your file to GitHub, you need to sync the file with your local machine. To do this you need to open terminal, and move to the folder using the ````cd```` command. Revisit either the [gitWindows](https://github.com/aazaff/teachPaleobiology/blob/master/GitTutorial/gitWindows.md) or [gitApple](https://github.com/aazaff/teachPaleobiology/blob/master/GitTutorial/gitApple.md) tutorials if you do not remember how to do this.
+Step 4: Now that you have successfully commited your file to GitHub, you need to sync the file with your local machine. To do this you need to open terminal, and move to the folder using the ````cd```` command. Revisit either the [gitWindows](https://github.com/naheim/teachPaleobiology/blob/master/GitTutorial/gitWindows.md) or [gitApple](https://github.com/naheim/teachPaleobiology/blob/master/GitTutorial/gitApple.md) tutorials if you do not remember how to do this.
 
 <a href="url"><img src="/GitTutorial/gitTutorial/Figure3.png" align="center" height="350" width="500" ></a>
 

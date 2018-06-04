@@ -87,7 +87,7 @@ Here is a fairly simple R script written with my intern, Erika Ito, that matches
 
 The full script is included in the below link. You can dive right in and just follow the comments (it's fairly well documented) or work along with the step-by-step instructions. Be warned that the script version is parallelized, which means that it will run ***substantially faster***. However, the parallelization functions are only available for Mac and Linux users.
 
-**Script**: [epandda.R](https://github.com/aazaff/portfolio/blob/master/epandda.R)
+**Script**: [epandda.R](https://github.com/naheim/portfolio/blob/master/epandda.R)
 
 ### Step 1:
 Install R libraries if necessary and load them into the R environment
