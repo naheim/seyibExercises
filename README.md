@@ -23,3 +23,5 @@ Additionally, the weekly tests, as oultined in the [syllabus](/CourseDocuments/p
 This course and all of its publically available content is funded by the University of Wisconsin - Madison and the [National Science Foundation](http://www.nsf.gov/). Our intention is to leverage the [Paleobiology Database](www.paleobiodb.org) as part of the NSF Geoinformatics grant 0949416 (supplement) initiative for enhancing geoscience education.
 
 Several of the lab materials used in this repository were modified from materials created by [Matt E. Clapham](http://people.ucsc.edu/~mclapham/) at the University of Santa Cruz.
+
+### Testing added text from Desktop
