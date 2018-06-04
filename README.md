@@ -25,3 +25,4 @@ This course and all of its publically available content is funded by the Univers
 Several of the lab materials used in this repository were modified from materials created by [Matt E. Clapham](http://people.ucsc.edu/~mclapham/) at the University of Santa Cruz.
 
 ### Testing added text from Desktop
+### Testing added text from Laptop
