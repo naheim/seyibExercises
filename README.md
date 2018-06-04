@@ -1,6 +1,6 @@
-# GEOSCIENCE 541: Paleobiology
+# Introduction to Quantitative Paleobiology
 
-This respository contains course materials and information for the GEOSCIENCE 541: Paleobiology course at the University of Wisconsin - Madison. Designed and maintained by Dr. [Andrew Zaffos](http://www.azstrata.org).
+This respository contains internship course materials and information for the *Stanford Earth Young Investigators: Biodiversity* program at Stanford University. Initially designed Dr. [Andrew Zaffos](http://www.azstrata.org); modified and maintained by Dr. [Noel Heim](http://sedpaleo.org).
 
 ## Resources in this Repository
 
@@ -20,6 +20,6 @@ Additionally, the weekly tests, as oultined in the [syllabus](/CourseDocuments/p
 
 ### Acknowledgments
 
-This course and all of its publically available content is funded by the University of Wisconsin - Madison and the [National Science Foundation](http://www.nsf.gov/). Our intention is to leverage the [Paleobiology Database](www.paleobiodb.org) as part of the NSF Geoinformatics grant 0949416 (supplement) initiative for enhancing geoscience education.
+This material was originally developed by Dr. [Andrew Zaffos](http://www.azstrata.org) for *GEOSCIENCE 541: Paleobiology* at the University of Wisconsin-Madison. The initial development of this publicly available content was funded by the University of Wisconsin - Madison and the [National Science Foundation](http://www.nsf.gov/) with the intention to leverage the [Paleobiology Database](www.paleobiodb.org) as part of the NSF Geoinformatics grant 0949416 (supplement) initiative for enhancing geoscience education.
 
 Several of the lab materials used in this repository were modified from materials created by [Matt E. Clapham](http://people.ucsc.edu/~mclapham/) at the University of Santa Cruz.
