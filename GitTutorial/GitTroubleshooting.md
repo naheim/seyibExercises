@@ -8,7 +8,6 @@ Here is a great tutorial to introduce you to some basic commands - https://githu
 Here are a few good resources:
 + [Think like a git](http://think-like-a-git.net/)
 + [git cheatsheet](http://cheat.errtheblog.com/s/git)
-+ [Lynda.com tutorials](http://www.lynda.com/Git-training-tutorials/1383-0.html) - Free for UW-Students! Use them!
 
 
 ## Problem: nothing happens, ever
