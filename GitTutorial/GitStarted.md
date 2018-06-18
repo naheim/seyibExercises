@@ -32,8 +32,8 @@ While that is a far more complex example than what will be required for this cla
 If you have never used `git` before, you should configure your name and email address.
 
 ````
-git config --global user.name "Kylo Ren"
-git config --global user.email kylo@firstorder.org
+git config --global user.name "Ellie Sattler"
+git config --global user.email esattler@jp.org
 ````
 
 Use the same name and email address that you will use for Github.
@@ -75,7 +75,7 @@ Create a name for repository, add an optional description, make sure it is publi
 
 On the next screen you will be presented with various options for adding code to your repository. Since you already created a repository on your computer, follow the instructions for "…or push an existing repository from the command line". Simply copy and paste those two commands into your terminal and then refresh the page. Voilà!
 
-The last step is to add Dr. Zaffos as a collaborator on the repository so that he can make edits to your assignments. To do this, click on the "Settings" tab of the repository, select "Collaborators" on the left side, and then add `aazaff` as a collaborator.
+The last step is to add Noel as a collaborator on the repository so that he can make edits to your projects. To do this, click on the "Settings" tab of the repository, select "Collaborators" on the left side, and then add `naheim` as a collaborator.
 
 
 ## Workflow
