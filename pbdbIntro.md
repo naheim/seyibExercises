@@ -1,4 +1,4 @@
-# Lab Exercise 3
+# Exercise 1: Introduction to the Paleobiology Database (PBDB)
 
 ## Instructions
 
