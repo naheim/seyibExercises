@@ -1,17 +1,10 @@
-# Introduction to Quantitative Paleobiology
+# R Exercises
 
-This respository contains internship materials and information for the *Stanford Earth Young Investigators: Biodiversity* program at Stanford University. Initially designed Dr. [Andrew Zaffos](http://www.azstrata.org); modified and maintained by Dr. [Noel Heim](http://sedpaleo.org).
+This respository contains Fossil Exercises. Their purpost is to introduce you to the incredible diversity, ecology, and eovlutionary histories of fossil marine invertebrates. These are hands-on exercises and not meant to be completed on the computer. For that reason, the lab exercises are saved here as PDFs for printing. These exercises were initially designed Will Gearty for the Stanford University Evolution of Marie Ecosystems course. They have been modified for SEYI:Biodiversity by [Noel Heim](http://sedpaleo.org).
 
-## Resources in this Repository (*in progress*)
+## Fossil Exercises (*in progress*)
 
-Resources | Description
+Exercise | Description
 --------- | ----------
-[Internship Syllabus](https://github.com/naheim/SEYI_2018/blob/master/README.md) | A description of how the course is internship and topics to be covered.
-[Fossil Exercises](RExercises/LabExercises.md) | Exercises to introduce marine invertebrate fossils.
-[R Exercises](RExercises/LabExercises.md) | Exercises to teach you R and quantitative tecnhiques in paleobiology.
-[R Tutorial](https://github.com/naheim/startLearn.R/blob/master/README.md) | Resources for developing your R skills like a pro.
-[Git Tutorial](GitTutorial/gitTutorial.md) | Resource for developing your git skills like a pro.
-
-### Acknowledgments
-
-This material was originally developed by Dr. [Andrew Zaffos](http://www.azstrata.org) for *GEOSCIENCE 541: Paleobiology* at the University of Wisconsin-Madison. The initial development of this publicly available content was funded by the University of Wisconsin - Madison and the [National Science Foundation](http://www.nsf.gov/) with the intention to leverage the [Paleobiology Database](www.paleobiodb.org) as part of the NSF Geoinformatics grant 0949416 (supplement) initiative for enhancing geoscience education.
+[Cambrian Fossils](Lab 01 - Cambrian Fossils.pdf) | Meet the trilobites and other Cambrian fossils.
+Paleozoic Fossils | An introduction to most of the rest of the Paleozoic fauna.
