@@ -12,6 +12,20 @@ A git repository exists both on **GitHub** (online) and on your **local** machin
 
 The key to successfully working with git is navigating the relationship between the **local copy** and the **GitHub** copy. This relationship is summarized by the concepts of ````pushing```` and ````pulling````.
 
+## Creating a Repository
+Step 1: Navigate to your profile on the GitHub website and click on the "Repositories" tab at the top.
+
+![repository page screen shot](/gitTutorial/Figure0.png "GitHub Repositories")
+
+Step 2: Click on New, to crate a new repository
+
+Step 3: Give your new repository a name. Make sure 'Public' is checked (you need to pay to have private repositories'. Check 'Initialize this repository with a README', which will crate an initial markdown file for you to describe your project.
+
+![repository page screen shot](/gitTutorial/Figure0.5.png "Making a new GitHub repositories")
+
+## Getting your repository onto your local computer
+
+
 ## Pulling and Pushing
 
 <a href="url"><img src="/GitTutorial/gitTutorial/GITHUB.png" align="center" height="450" width="500" ></a>
@@ -22,6 +36,8 @@ The key to successfully working with git is navigating the relationship between 
 The primary issue then for you, as a git user, is whether you (1) want to add and edit files on the GitHub website, and only sync to your computer after the fact or (2) want to add and edit your computer and only sync (upload) your files to GitHub after the fact. I discuss the first scenario in the [Working from GitHub First](#working-from-github-first) section and the latter scenario in the [Local Machine First](#local-machine-first) section.
 
 **Importantly, you ideally do NOT want to do both when you are first starting out. Choose one of the two workflows and stick with it until you are more advanced. Either [GitHub First](#working-from-github-first) or [Local Machine First](#local-machine-first).**
+
+
 
 ## Working from GitHub First
 
