@@ -1,3 +1,5 @@
+#### Modified from tutoral created by [Andrew Zaffos](https://github.com/aazaff) for the UW-Madison Paleobiology Course.
+
 # Introduction
 
 The following is a revised version of the git and GitHub tutorial. You can still access the [old git tutorial](https://github.com/naheim/teachPaleobiology/blob/master/GitTutorial/GitStarted.md) and list of [basic git commands](https://github.com/naheim/teachPaleobiology/blob/master/GitTutorial/BasicGitCommands.md). However, everything you need to get started with git (other than installation) is included in this tutorial.
