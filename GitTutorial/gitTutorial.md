@@ -15,13 +15,13 @@ The key to successfully working with git is navigating the relationship between 
 ## Creating a Repository
 Step 1: Navigate to your profile on the GitHub website and click on the "Repositories" tab at the top.
 
-![repository page screen shot](/gitTutorial/Figure0.png "GitHub Repositories")
+![repository page screen shot](gitTutorial/Figure0.png "GitHub Repositories")
 
 Step 2: Click on New, to crate a new repository
 
 Step 3: Give your new repository a name. Make sure 'Public' is checked (you need to pay to have private repositories'. Check 'Initialize this repository with a README', which will crate an initial markdown file for you to describe your project.
 
-![repository page screen shot](/gitTutorial/Figure0.5.png "Making a new GitHub repositories")
+![repository page screen shot](gitTutorial/Figure0.5.png "Making a new GitHub repositories")
 
 ## Getting your repository onto your local computer
 
