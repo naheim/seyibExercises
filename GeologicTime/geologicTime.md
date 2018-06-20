@@ -1,28 +1,28 @@
 # Constructing a Geologic Timescale...to scale
 
-##Introduction:
+## Introduction:
 Earth's history spans a duration of time that is for most people, including me, inomprehnsively long. I hope that this activity will provide a useful model for you to being your journey on comprehending geological time. I also hope you find that this activity exercises your creativity and is fun.
 
-##Objective:
+## Objective:
 
 You will work in gorups of three or four to construct a model time scale illustrating the formal intervals of geologic time as well as as subset of imporiant and intersing some previous geological and evolutioanry events. You will also think critically about the span of geological time and important events as they relate to Earth's history and the construction of geolgoical time.
 
-##Materials:
+## Materials:
 long sheet of paper, one for each group; metric rulers; colored pencils and/or markers; [GSA Timescale](geologicTimescaleGSA.pdf); and an activity sheet.
 
-##Procedure:
+## Procedure:
 1. Measure the length of your paper and determine the scale to which you will draw your timescale.
 2. Draw, to scale, the geological eons, eras, and periods listed on the worksheet below. Use the [GSA Timescale](geologicTimescaleGSA.pdf) to determine the start and end of each interval.
 3. Add the geological and evolutionary events to your timescale. You will need to do some research on the internet or in textbooks to find the correct ages for these events and organims.
 4. Answer the two questions at the end of the worksheet.  
 
-##Worksheet
+## Worksheet
 Add the organisms, events, and time periods to you paper timescale. You should fill out the follwoing tables to help you quickly add infomration to you
 What is the scale for your timescale, be sure to include units? ___________________.
 
 *Hint*: it should be in units of geologic time per length of paper.
 
-###Eons
+### Eons
 Eon Name | Start Age | End Age | Duration (Ma) | length on paper
 --------------| ----------| -------| -------| -------
 Hadean | | | |
@@ -30,7 +30,7 @@ Archaean | | | |
 Proterozoic | | | |
 Phanerozoic | | | |
 
-###Eras
+### Eras
 Era Name | Start Age | End Age | Duration (Ma) | length on paper
 --------------| ----------| -------| -------| -------
 Eoarchean | | | |
@@ -42,7 +42,7 @@ Paleozoic | | | |
 Mesozoic | | | |
 Cenozoic | | | |
 
-###Periods
+### Periods
 Period Name | Start Age | End Age | Duration (Ma) | length on paper
 --------------| ----------| -------| -------| -------
 Tonian | | | |
@@ -61,7 +61,7 @@ Paleogene | | | |
 Neogene | | | |
 Quaternary | | | |
 
-###Geological & Evolutioanry Events
+### Geological & Evolutioanry Events
 (some of the ages may be ranges)
 
 Event or Organism | &nbsp;&nbsp;&nbsp;&nbsp;Age&nbsp;&nbsp;&nbsp;&nbsp; | Additional Question
@@ -84,7 +84,7 @@ First land plant | |Name:_____________________
 First placoderms	 | |What are they?:__________________________
 Great Oxidation Event | | What was it?:__________________________
 
-###Mass Extinctions of Marine Animals
+### Mass Extinctions of Marine Animals
 Extinction | Age | Period
 --------------| ----------| -------
 Mass Extinction 1 | |
@@ -93,7 +93,7 @@ Mass Extinction 3 | |
 Mass Extinction 4 | |
 Mass Extinction 5 | |
 
-###Find your own events
+### Find your own events
 Come up with 5 other environmental or evolutionary events in Earth’s history. You will need to do a littel research for these.
 
 1. _________________________________________  Age:__________ 
