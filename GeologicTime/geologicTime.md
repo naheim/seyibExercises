@@ -75,13 +75,12 @@ First Jellyfish | |
 First Eukaryote | |
 Oldest fossil prokaryote (bacteria) | |
 Formation the Moon | |
-First ape | |Name:_____________________
-First whale | |Name:_____________________
+First ape | | Name:_____________________
+First whale | | Name:_____________________
 First mososaur | | Name:_____________________
-First shark | |Name:_____________________
-First land plant | |Name:_____________________
-First land plant | |Name:_____________________
-First placoderms	 | |What are they?:__________________________
+First shark | | Name:_____________________
+First land plant | | Name:_____________________
+First placoderms	 | | What are they?:__________________________
 Great Oxidation Event | | What was it?:__________________________
 
 ### Mass Extinctions of Marine Animals
