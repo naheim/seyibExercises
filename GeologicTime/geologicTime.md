@@ -10,6 +10,9 @@ You will work in gorups of three or four to construct a model time scale illustr
 ## Materials:
 long sheet of paper, one for each group; metric rulers; colored pencils and/or markers; [GSA Timescale](geologicTimescaleGSA.pdf); and an activity sheet.
 
+## Timing 
+I have found that about 2 hours for constructing the timescals works well.  Two  and half is pushing too long--some groups are still working on drawing/art but other are done and begin to get bored. I typically end the exercises with a 30-40 minute discussion the scales. In the discussion, each group shares how they divided geologic time on their scales (some don't alway use a single scale). They aslo share new aspects of earth history and paleobiology that they learned about and found interesting.
+
 ## Procedure:
 1. Measure the length of your paper and determine the scale to which you will draw your timescale.
 2. Draw, to scale, the geological eons, eras, and periods listed on the worksheet below. Use the [GSA Timescale](geologicTimescaleGSA.pdf) to determine the start and end of each interval.
