@@ -7,4 +7,4 @@ This respository contains Fossil Exercises. Their purpost is to introduce you to
 Exercise | Description
 --------- | ----------
 [Cambrian Fossils](Lab01_CambrianFossils.pdf) | Meet the trilobites and other Cambrian fossils.
-Paleozoic Fossils | An introduction to most of the rest of the Paleozoic fauna.
+[Paleozoic Fossils](Lab02_PaleozoicFossils.pdf) | An introduction to most of the rest of the Paleozoic fauna.
