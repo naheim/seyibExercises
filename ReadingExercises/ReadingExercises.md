@@ -2,27 +2,38 @@
 
 ## Instructions
 
-Every week you must read each of the following papers or essays. You will then hand in a write-up on the article the following Monday. You will also have to be prepared to discuss the paper in class. If the quality of discussion is low, you may be called upon to read excerpts from your write-up to the class. An [example writing exercise](http://teststrata.geology.wisc.edu/teachPaleobiology/WritingExercises/WritingExample.md) is available with instructions.
+Usually, we will read and discuss a scientific paper or a chapter from Bonner 2006 twice per week. The goals are for you to learn how to read a scientific paper; to gain an understanding of the data and questions we're working with this summer; and to inspire your scientific creativity.
 
-## Warning!!!
+## Reading a paper
 
-I *may* substitute in different readings if the class decides it wants to explore other topics. I will always give forewarning before making a substitution, and this website will be updated. Nevertheless, you should not read too far ahead of the class schedule for this reason.
+When you are reading a paper you want to do six things: Consider, Read, Elucidate the hypotheses, Analyze and interpret the data, Think of the next Study. This is referred to as the CREATE method. First, the key components of the method will be described; then suggestions for using CREATE in class activities and assignments will be provided.
 
-## Reading Schedule
+1. Begin by reading the introduction to the article. You are shoul to **Consider** the relationships between the key concepts presented in the introduction. They often create a concept map of these ideas (i.e., a figure showing the relationship between the different ideas).
 
-Link | Start Reading | Due Dates | Title
---------- | ---------- | ----------- | ----------
-[Reading01](http://www.theguardian.com/science/punctuated-equilibrium/2010/oct/20/3) | January 20 | January 25 | How many species concepts are there?
-[Reading02](http://teststrata.geology.wisc.edu/teachPaleobiology/ReadingExercises/Hydrothermal%20vents.pdf) | January 27 | February 01 | Hydrothermal vents and the origin of life.
-[Reading03](http://teststrata.geology.wisc.edu/teachPaleobiology/ReadingExercises/Niche%20Conservatism.pdf) | February 03 | February 08 | Niche conservatism above the species level.
-[Reading04](http://teststrata.geology.wisc.edu/teachPaleobiology/ReadingExercises/Latitude.pdf) | February 10 | February 15 | Latitudinal response curves.
-[Reading05](http://teststrata.geology.wisc.edu/teachPaleobiology/ReadingExercises/BiodiversityScenarios.pdf) | February 17 | February 22 | Global biodiversity scenarios for the year 2100.
-[Reading06](http://teststrata.geology.wisc.edu/teachPaleobiology/ReadingExercises/Live%20Dead.pdf) | February 24 | February 29 | How good was the fossil record? Clues from the California Pleistocene.
-[Reading07](http://teststrata.geology.wisc.edu/teachPaleobiology/ReadingExercises/Lithification.pdf) | March 02 | March 07 | The influence of lithification on Cenozoic marine biodiveristy trends.
-[Reading08](http://teststrata.geology.wisc.edu/teachPaleobiology/ReadingExercises/CommonCause.pdf) | March 09 | March 14 | Determinants of extinction in the fossil record.
-[Reading09](http://teststrata.geology.wisc.edu/teachPaleobiology/ReadingExercises/Ecologic%20Severity.pdf) | March 16 | **March 28** | Decoupling taxonomic and ecologic severity of mass extinctions.
-[Reading10](http://teststrata.geology.wisc.edu/teachPaleobiology/ReadingExercises/Mass%20Depletion.pdf) | March 30 | April 4 | Origination, extinction, and mass depletions of marine diversity.
-[Reading11](http://teststrata.geology.wisc.edu/teachPaleobiology/ReadingExercises/Geographic%20Extinction.pdf) | April 6 | April 11 | The effect of geographic range on extincton risk.
-[Reading12](http://teststrata.geology.wisc.edu/teachPaleobiology/ReadingExercises/RedQueen.pdf) | April 13 | April 18 | Red Queen and Court Jester Hypothesis
-[Reading13](http://teststrata.geology.wisc.edu/teachPaleobiology/ReadingExercises/DinosaurExtinction.pdf) | April 20 | April 25 | Rates of Dinosaur Decline
-[Reading14](http://teststrata.geology.wisc.edu/teachPaleobiology/ReadingExercises/Sixth%20Extinction.pdf) | April 27 | May 2 | Has the Earth's sixth mass extinction already arrived?
+2. Next, move on to **Read** the methods and results sections, including all graphs and figures provided in those sections. In order to make sure that you understand what you are reading, you should (1) annotate and re-title figures to improve clarity; and (2) draw pictures of the methods (i.e., a cartoon) indicating how the study was actually conducted.
+
+3. After you are clear on the methods used in the study, you need to **Elucidate the hypotheses** based on the results and write out the research questions above each figure or table.
+
+4. With questions/hypotheses established, you then begin to **Analyze and interpret the data**. Please compare results between groups (i.e., experimental and control, other groupings of data analyzed) and draw conclusions based on the data. At this point, you should read the authors’ discussion and evaluate their conclusions.
+
+
+5. Finally, you are should **Think of the next Study** (or experiment if it's that kind of study), think critically about the study and generate ideas about future research projects. This may include generating questions you would want to ask the author(s), or it may involve designing follow-up studies.
+
+(*modified from [Yale Center for Teaching & Learning](https://ctl.yale.edu/teaching/ideas-teaching/teaching-journal-articles)
+
+## Reading Schedule (*subject to change*)
+
+Date | Reading
+---- | -----
+25 June 2018 AM | [Knope *et al.* 2015](papers/KnopeEtAl2015.pdf)
+26 June 2018 AM | [Heim *et al.* 2015](papers/HeimEtAl2015.pdf)
+28 June 2018 AM | Bambach *et al.* 2002
+02 July 2018 AM | Bonner Chapters 1 & 2
+05 July 2018 AM | McShea 1995
+12 July 2018 AM | Bonner Chapter 3
+17 July 2018 AM | Hunt 2007
+19 July 2018 AM | Bonner Chapter 4
+26 July 2018 AM | Zaffos *et al.* 2017
+31 July 2018 AM | Bonner Chpater 5
+02 August 2018 AM | Sibert & Norris 2016
+07 August 2018 AM | Bonner Chapter 6 & 7
