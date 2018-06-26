@@ -1,14 +1,10 @@
-# Lab Exercise 3
-
-## Instructions
-
-Complete the following lab exercise and submit your answers as a GitHub flavored markdown file to your personal GitHub repository by Febrary 15, 2016.
+# Lab Exercise 01: Introduction to the PBDB
 
 ## Finding the Paleobiology Database Website
 
-The URL for the Paleobiology Database is [www.paleobiodb.org](https://paleobiodb.org). However, because you are all honorary members of the development team, you can also use the special development server at [www.training.paleobiodb.org](https://training.paleobiodb.org).  Go there now in your web browser. The first thing that you should see is the **SPLASH** page. 
+The URL for the Paleobiology Database is [www.paleobiodb.org](https://paleobiodb.org).  Go there now in your web browser. The first thing that you should see is the **SPLASH** page. 
 
-<a href="url"><img src="/Lab3Figures/Figure1.png" align="center" height="450" width="500" ></a>
+<a href="url"><img src="01_Figures/Figure1.png" align="center" height="450" width="500" ></a>
 
 The Paleobiology Database (**PBDB** for short) splash page has a lot of information packed into it. At the bottom of the screen you will see some basic stats on the types and quantity of data located in the database.
 
@@ -23,16 +19,16 @@ Data Type | Definition
 
 ## References
 
-All data in the PBDB can ultimatley be traced back to one or more references. The interface for searching and viewing references is currently being overhauled this semester, which is why there is no search button on the splash page. You can still access the old references search feature by clicking [here](https://training.paleobiodb.org/cgi-bin/bridge.pl?a=displaySearchRefs&type=view).
+All data in the PBDB can ultimatley be traced back to one or more references. The interface for searching and viewing references is currently being overhauled this semester, which is why there is no search button on the splash page. You can still access the old references search feature by clicking [here](https://paleobiodb.org/cgi-bin/bridge.pl?a=displaySearchRefs&type=view).
 
 The references search page should look something like this.
-<a href="url"><img src="/Lab3Figures/Figure2.png" align="center" height="450" width="500" ></a>
+<a href="url"><img src="01_Figures/Figure2.png" align="center" height="450" width="500" ></a>
 
 #### Exercise Questions 1
 
 Let's take a look at a great scientific paper by Steven M. Holland and Mark E. Patzkowsky. 
 
-<a href="url"><img src="/Lab3Figures/Figure3.png" align="center" height="450" width="500" ></a>
+<a href="url"><img src="01_Figures/Figure3.png" align="center" height="450" width="500" ></a>
 
 Use the reference search tool to look up collections associated with this paper and answer the following questions.
 
@@ -42,11 +38,11 @@ Use the reference search tool to look up collections associated with this paper 
 
 Once you have answered the above questions, click the **view collections** hyperlink to see a print out of the collections associated with the study.
 
-<a href="url"><img src="/Lab3Figures/Figure4.png" align="center" height="450" width="500" ></a>
+<a href="url"><img src="01_Figures/Figure4.png" align="center" height="450" width="500" ></a>
 
 Click on collection no. **72438**. Answer the following questions about this collection.
 
-<a href="url"><img src="/Lab3Figures/Figure5.png" align="center" height="450" width="500" ></a>
+<a href="url"><img src="01_Figures/Figure5.png" align="center" height="450" width="500" ></a>
 
 1. The first taxon in the taxonomic list is *Rafinesquina alternata*. Next to the taxonomic name is the citation (Conrad 1830), what is the significance of this citation?
 
@@ -78,11 +74,11 @@ Therefore, as we progress in this class, you will see that often times the first
 
 Return to the **SPLASH** page, and enter the PBDB [navigator](https://paleobiodb.org/navigator/) tool. This tool is the best way to visualize the age and location of collections in the PBDB.
 
-<a href="url"><img src="/Lab3Figures/Figure6.png" align="center" height="450" width="500" ></a>
+<a href="url"><img src="01_Figures/Figure6.png" align="center" height="450" width="500" ></a>
 
 Look at the search bar prompt in the top right corner. Navigator will allow you to enter a geologic time period, a taxon, an authorizer, or a geologic unit. Let's look for the genus *Abra*.
 
-<a href="url"><img src="/Lab3Figures/Figure7.png" align="center" height="450" width="500" ></a>
+<a href="url"><img src="01_Figures/Figure7.png" align="center" height="450" width="500" ></a>
 
 1. Zoom in so that you can see from Texas to Florida and from Florida to New York. You can zoom using the mouse wheel, by double-clicking, or clicking the **+** and **-** signs. Some of the occurrences are orange and others are yellow, what is the significance of the different colors?
 
@@ -104,7 +100,7 @@ You can download the data displayed in your Navigator window using the little ar
 
 To customize the data you want, use the new and more detailed download form. To find the form, return to the **SPLASH** page and click on [Download Data](https://paleobiodb.org/cgi-bin/bridge.pl?a=displayDownloadGenerator). This download form uses the new Paleobiology Database **API**. Once you are more advanced, you will be able to download data directly into R using the **API**, and will no longer need to use Navigator or the download form.
 
-<a href="url"><img src="/Lab3Figures/Figure8.png" align="center" height="450" width="500" ></a>
+<a href="url"><img src="01_Figures/Figure8.png" align="center" height="450" width="500" ></a>
 
 Let's try downloading all collections of both *Ambonychia* and *Abra* as a tab-separated file. 
 
@@ -112,7 +108,7 @@ Let's try downloading all collections of both *Ambonychia* and *Abra* as a tab-s
 2. Select Tab-separated values (tsv)
 3. Enter Abra, Ambonychia into the Taxon textbar.
 
-<a href="url"><img src="/Lab3Figures/Figure9.png" align="center" height="450" width="500" ></a>
+<a href="url"><img src="01_Figures/Figure9.png" align="center" height="450" width="500" ></a>
 
 If you were successful you should have gotten a blue URL, describing your data request.
 
@@ -162,7 +158,7 @@ https://paleobiodb.org/data1.2/occs/list.csv?base_name=Smilodon&interval=Pleisto
 
 The following figure deconstructs each element of this query.
 
-<a href="url"><img src="/Lab3Figures/API.png" align="center" height="600" width="750" ></a>
+<a href="url"><img src="01_Figures/API.png" align="center" height="600" width="750" ></a>
 
 The first half of the query, before the **?** is fairly straightforward because there are only a few possible variations. However, the **parameters** that come afterwards can become quite cumbersome because there are many varieties of them, and many of them will change depending on what type of data you are using (i.e., collections vs. occurrences). You will need to use the documentation to see a full list of the possible paramters.
 
@@ -174,9 +170,11 @@ The first half of the query, before the **?** is fairly straightforward because 
 
 You can also access the API documentation from the main SPLASH page.
 
-<a href="url"><img src="/Lab3Figures/Figure10.png" align="center" height="450" width="500" ></a>
+<a href="url"><img src="01_Figures/Figure10.png" align="center" height="450" width="500" ></a>
 
 This will take you to a page that lists the different data routes. If you click on those routes, it will take you to pages that describe different parameters associated with the chosen route. Let's take a breather though and answer some questions.
+
+The API is most useful for using in programs like R (or for making web or smart phone apps). As indicated in the API documentation, you can request files in several different formats. Importantly, you can directly dowload files into R. Two of the most use ful are CSV and TSV. CSV stands for **comma separated file**, it is one of the most common file formats used in R for storing two-dimensional arrays - i.e., matrices or data frames. You can also view, create, and edit them using a spreadsheet program like Microsoft Excel.
 
 #### Exercise Questions 5
 
@@ -184,7 +182,7 @@ This will take you to a page that lists the different data routes. If you click 
 https://paleobiodb.org/data1.2/colls/list.csv?base_name=Mammut&interval=Pliocene
 ````
 
-1. In [Lab Exercise 2](/LabExercise2.md#step-2) you downloaded a csv file of ammonite sizes from a github URL directly into R. What code would you use to download the above PBDB data directly into R? 
+1. What code would you use to download the above PBDB data directly into R? Hint: ````?read.csv````
 
 2. Download the above data into R. What are its dimensions?
 
@@ -264,8 +262,6 @@ Some species have morphologic data attached to them in the Paleobiology Database
 
 Each of these species have morphologic data (e.g., shell width measurements) attached to them in the paleobiology database. You can search for this information by searching taxonomic names [here](https://paleobiodb.org/cgi-bin/bridge.pl?a=beginTaxonInfo).
 
-1. Each of the ammonite specimens in [Part I of Lab 2](/LabExercise2.md#part-i) belongs to one of these three species. Based on 1) the morphologic information on these three species in the Paleobiology Database and 2) the morphologic information from Lab 2, can you tell which specimens belong to which species? Explain your reasoning.
+1. Look up *Glyptophiceras sinuatum*, *Xenoceltites variocostatus*, and *Submeekoceras mushbachanum* in the Paleobiology Database. Find the first person (journal paper/reference) to name this species. (Hint: For *X. variocostatus *, both the first and second author's last names start with "B"). What is the name of the article for each?
 
-2. Look up *Xenoceltites variocostatus* in the Paleobiology Database. Find the first person (journal paper/reference) to name this species. (Hint: Both the first and second author's last names start with "B"). What is the name of the article?
-
-3. Do a [google scholar](https://scholar.google.com/) search for this article. Open it and scroll down to the "Plates" subsection. You should see various pictures of different ammonites towards the very end of the article. Find the pictures of *Xenoceltites variocostatus*. Based on the features in these pictures, can you identify which specimens in [Part I of Lab 2](https://github.com/aazaff/teachPaleobiology/blob/master/LabExercise2.md#part-i) belong to this species?
+2. Do a [google scholar](https://scholar.google.com/) search for the article that first names *Xenoceltites variocostatus*. Open it and scroll down to the "Plates" subsection. You should see various pictures of different ammonites towards the very end of the article. Find the pictures of *Xenoceltites variocostatus*. Which plates illustrate this species, and how what is the maximum diameter of the illustrated specimens (in units of mm)?
