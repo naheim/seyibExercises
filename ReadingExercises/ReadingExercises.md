@@ -4,6 +4,8 @@
 
 Usually, we will read and discuss a scientific paper or a chapter from Bonner 2006 twice per week. The goals are for you to learn how to read a scientific paper; to gain an understanding of the data and questions we're working with this summer; and to inspire your scientific creativity.
 
+**[Guide to Leading Discussions](LeadingDiscussion.md)**
+
 ## Reading a paper
 
 When you are reading a paper you want to do six things: Consider, Read, Elucidate the hypotheses, Analyze and interpret the data, Think of the next Study. This is referred to as the CREATE method. First, the key components of the method will be described; then suggestions for using CREATE in class activities and assignments will be provided.
@@ -28,8 +30,8 @@ Date | Reading
 25 June 2018 AM | [Knope *et al.* 2015](papers/KnopeEtAl2015.pdf)
 26 June 2018 AM | [Heim *et al.* 2015](papers/HeimEtAl2015.pdf)
 28 June 2018 AM | Bambach *et al.* 2002
-02 July 2018 AM | Bonner Chapters 1 & 2
-05 July 2018 AM | McShea 1995
+02 July 2018 AM | McShea 1994
+05 July 2018 AM | Bonner Chapters 1 & 2
 12 July 2018 AM | Bonner Chapter 3
 17 July 2018 AM | Hunt 2007
 19 July 2018 AM | Bonner Chapter 4
