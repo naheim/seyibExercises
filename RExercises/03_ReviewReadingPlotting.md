@@ -159,6 +159,8 @@ Once you set the working directory, you are ready to read in the file. To read i
 
 ````r
 > sizeData <- read.delim(file='supplementary_data_file.txt')
+> # Alternatively you can read the file in directly from the web
+> sizeData <- read.delim(file='https://stacks.stanford.edu/file/druid:rf761bx8302/supplementary_data_file.txt')
 ````
 
 The first thing I always do after reading in a new dataset, is take a look at it to make sure it looks like it should. 
@@ -170,11 +172,13 @@ The first thing I always do after reading in a new dataset, is take a look at it
 
 You have already seen ``dim()``, but ``head()`` is also very useful. Because sizeData has more than 17,000 rows, if you were to just type sizeData, R would try to show you all 17,000+ rows. The head() function returns the first 6 rows only. This gives you a chance to make sure the column names were read in correctly and that the values of each column appear to be in the correct format. Take a few minutes to make sure you understand what the columns in the data frame are and how you might use them in constructing your plot.
 
-You also need to read in a second tab-delimited file called *timescale.txt*. The file can be downloaded directly from GitHub: [paleosizePaper/rawDataFiles/timescale.txt](paleosizePaper/rawDataFiles/timescale.txt). Once you have read the file into R, use head to examine the types of information included in the data frame. Make sure you understand each column in the data frame.
+You also need to read in a second tab-delimited file called *timescale.txt*. The file can be downloaded directly from GitHub: [paleosizePaper/rawDataFiles/timescale.txt](https://raw.githubusercontent.com/naheim/paleosizePaper/master/rawDataFiles/timescale.txt). Once you have read the file into R, use head to examine the types of information included in the data frame. Make sure you understand each column in the data frame.
 
 ````r
-> timescale <- read.delim(file=‘timescale.txt')
+> timescale <- read.delim(file='timescale.txt')
 > head(timescale)
+> # Alternatively you can read the file in directly from the web
+> sizeData <- read.delim(file='https://raw.githubusercontent.com/naheim/paleosizePaper/master/rawDataFiles/timescale.txt')
 ````
 
 ## <a name="makePlot"></a>Making Your Plot
