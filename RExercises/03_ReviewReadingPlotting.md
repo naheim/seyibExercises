@@ -123,7 +123,7 @@ Extracting whole columns is easy; extracting rows is a bit more complicated. To 
 Let’s deconstruct what we did here. The first term inside the square brackets is ``d$fac == 'B'``. What this means is to return all the rows where the value of the column named fac is equal to ’B’. If you have never learned a programming language, you may be asking why there are two quals signs. This is how we ask the question “is a variable equal to some value”. In this case we are asking if the values in the fac column are equal to ’B’. If we only included one equals sign, R would think we were trying to set the values of the fac column to ’B’. Since doing this inside square brackets doesn’t make sense, R returns an error. Try it out. There is nothing the the right of the comma because we want to get all the columns. If we only wanted the y and fac columns, we would use the following.
 
 ````r
-> d[d$fac == 'B', 2:3] # returns 2nd and 3rd columns from the rows of d with a value of ‘B’ in the fac column
+> d[d$fac == 'B', 2:3] # returns 2nd and 3rd columns from the rows of d with a value of 'B' in the fac column
 Simple Cross Plots—Making a simply x-y plot in R is easy. Here is a simple example where we plot two vectors of random numbers.
 
 > myX <- rnorm(100) # a vector of 100 random numbers drawn from a normal distribution
@@ -178,7 +178,7 @@ You also need to read in a second tab-delimited file called *timescale.txt*. The
 > timescale <- read.delim(file='timescale.txt')
 > head(timescale)
 > # Alternatively you can read the file in directly from the web
-> sizeData <- read.delim(file='https://raw.githubusercontent.com/naheim/paleosizePaper/master/rawDataFiles/timescale.txt')
+> timescale <- read.delim(file='https://raw.githubusercontent.com/naheim/paleosizePaper/master/rawDataFiles/timescale.txt')
 ````
 
 ## <a name="makePlot"></a>Making Your Plot
@@ -195,17 +195,17 @@ Your version of Figure 1 will be somewhat simplified compared to the published v
 
 
 ### Steps for creating your plot.
-* Make sure you have read in the size data frame from the file called *supplementary_data_file.txt*.
+* Make sure you have read in the size data frame from the file called *supplementary\_data\_file.txt*.
 
-* Read in the timescale data frame from the file called timescale.txt. Make sure you understand what is in this data frame.
+* Make sure you have read in the timescale data frame from the file called *timescale.txt*. Make sure you understand what is in this data frame.
 
 * Open a plot window and set the x and y limits of the plot as well as the x and y axis labels. You may want to set ``type="n"``. The help file for plot.default may be helpful. To get a proper time axis you will want to set the xlim parameter.
 
-* Plot horizontal lines for each genus. The position on the y-axis will correspond to the size of the genus, the starting position on the x-axis will correspond to the time of origination, and the end position will be the time of extinction.
+* Plot horizontal lines for each genus. The position on the y-axis will correspond to the size of the genus, the starting position on the x-axis will correspond to the time of origination, and the end position will be the time of extinction. For a hint look up the help page for the ``segments()`` function. Consideing the sizeData data frame, what are the vectors you will put into your code for the *x0*, *y0*, *x1* and *y1* parameters? 
 
 * Once you have a base plot made, calculate the mean size of all animals in each of the geologic time interval (i.e., rows in the geologic timescale object you just read in). You may need to write a loop (see below).
 
-* Calculate the 5^th and 95^th quantile of genus sizes in each of the geologic time intervals. You may want to include this in same loop you use for the mean. The ``sort()`` function may be helpful.
+* Calculate the 5^th and 95^th quantile of genus sizes in each of the geologic time intervals. You may want to include this in same loop you use for the mean. The ``sort()`` or ``quantile()`` functions may be helpful.
 
 * Add lines to your plot for the 5^th size quantile, 95^th size quantile, and mean size. You should probably make these lines a color other than black.
 
@@ -240,11 +240,11 @@ hist(durations)
 ````
 
 #### Some functions you will find useful
-* mean()
-* plot()
-* segments()
-* lines()
-* sort()
+* ``mean()``
+* ``plot()``
+* ``segments()``
+* ``lines()``
+* ``sort()``
 
 
 ## <a name="stratData"></a> Note on Working with Stratigraphic Ranges
