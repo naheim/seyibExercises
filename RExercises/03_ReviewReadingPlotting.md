@@ -10,6 +10,10 @@
 
 [Making Your Plot](#makePlot)
 
+[Writing Loops](#loops)
+
+[Working with Stratigraphic Ranges](#stratData)
+
 [Additional Resources](#resources)
 
 ## <a name="goals"></a>Exercise Goals
@@ -195,13 +199,41 @@ Your version of Figure 1 will be somewhat simplified compared to the published v
 
 * Plot horizontal lines for each genus. The position on the y-axis will correspond to the size of the genus, the starting position on the x-axis will correspond to the time of origination, and the end position will be the time of extinction.
 
-* Once you have a base plot made, calculate the mean size of all animals in each of the geologic time interval (i.e., rows in the geologic timescale object you just read in). You may need to write a loop.
+* Once you have a base plot made, calculate the mean size of all animals in each of the geologic time interval (i.e., rows in the geologic timescale object you just read in). You may need to write a loop (see below).
 
-* Calculate the 5th and 95th quantile of genus sizes in each of the geologic time intervals. You may want to include this in same loop you use for the mean. The ``sort()`` function may be helpful.
+* Calculate the 5^th and 95^th quantile of genus sizes in each of the geologic time intervals. You may want to include this in same loop you use for the mean. The ``sort()`` function may be helpful.
 
-* Add lines to your plot for the 5th size quantile, 95th size quantile, and mean size. You should probably make these lines a color other than black.
+* Add lines to your plot for the 5^th size quantile, 95^th size quantile, and mean size. You should probably make these lines a color other than black.
 
 * If you have time, modify your code to give a different color to the genus lines that correspond to the different phyla.
+
+## <a name="loops"></a> Writing Loops
+
+Loops are a programming tool that let you do the same calculation or set of calculations over and over again.  There are several types of loops, but we will use just the for loop.  It is simple and can do most tasks you’ll need.  In R the for loop has three basic parameters: a counting variable, a starting value and an ending value.  Here is a very simple loop that just prints the counting variable to your screen.  Run it to see what it does.
+
+````r
+for(i in 1:10) {
+	print(i)
+}
+````
+
+In the above code, ``i`` is the counting variable, 1 is the starting value and 10 is the ending value.  The loop starts by setting your counting variable equal to the stating value.  Next it does whatever you have put inside the curly braces, {}.  In the above example all we told the loop to do was print (to the screen) the counting variable.  Notice that it prints the actual number, not the letter i.  After it completes everything inside the curly braces it adds 1 to ``i``, then goes back to the top of the code inside the curly braces and performs it agin this time with the new value of i.  The loop stops when i equals the ending value and the code inside the curly braces is completed.  Notice the loop above stopped at 10 and did not print 11.
+
+You can put whatever you want inside the curly braces of loop.  This is useful for calculating the same thing for different subsets of data.  For your research project, you will likely want to loop through the timescale to calculate things like the number of genera or mean body size within an interval.  Here is another very simple loop that goes through the geological time scale calculating the duration of each interval.  Of course you did this same exercise much more simply yesterday, but this example is just meant to illustrate how you would perform a calculation inside a loop and save the results in a variable.
+
+````r
+# step 1: create a variable to save your results
+durations <- vector(mode="numeric", length=nrow(timescale))
+for(i in 1:nrow(timescale)) {
+	durations[i] <- timescale$age_bottom[i] - timescale$age_top[i]
+}
+````
+
+Notice nothing was printed to the screen.  This is because we didn’t tell the loop to print anything.  To see if it worked, make a histogram of durations.  Does it look like the one you made yesterday?
+
+````r
+hist(durations)
+````
 
 #### Some functions you will find useful
 * mean()
@@ -211,7 +243,7 @@ Your version of Figure 1 will be somewhat simplified compared to the published v
 * sort()
 
 
-### Note on Working with Stratigraphic Ranges
+## <a name="stratData"></a> Note on Working with Stratigraphic Ranges
 
 Working with stratigraphic ranges can be tricky, mostly because you need to develop the logic for extracting the genera that are extant (or go extinct, or originate) during any given geological stage. This following explanation will be helpful in subsetting your body size data frame as you are loop through each of the 90+ geologic stages. The challenge is extracting only those genera that are extant in each interval. The figure below is useful in developing the necessary logic. The two vertical lines represent the boundaries of a time interval, with the oldest boundary on the left and the youngest on the right. The horizontal lines represent the 4 possible relationships between taxon ranges and time interval boundaries.
 
