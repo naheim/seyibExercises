@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-[Workshop Goals](#goals)
+[Exercise Goals](#goals)
 
 [R Basics](#basics)
 
@@ -10,9 +10,9 @@
 
 [Making Your Plot](#makePlot)
 
-[Additional Resources](#goals)
+[Additional Resources](#resources)
 
-## <a name="goals"></a>Workshop Goals
+## <a name="goals"></a>Exercise Goals
 
 The goal of this exercise is to become paractice using R with some practical examples that will be invaluable for your research projects. By the end of the exercise know how to read in a data frame from a text file, use simple functions means, log-transform your data, and generate a histogram. 
 
@@ -79,7 +79,7 @@ In addition to performing arithmetic on a vector, we can also extract a certain 
 > x[3] # returns the 3rd value of x, which is a 5
 ````
 
-**Matrices & Data Frames**—Matrices and data frames are both essentially tables. The main difference between a matrix and a data frame is that all the values of a matrix must be numeric while a data frame can have mixed data types. For this workshop, we will only be using data frames, so we will focus on them. You can think of a data frame as spreadsheet with rows and columns. And like in an Excel spreadsheet, you can give your rows and columns names. Column names are particularly helpful. Below we make a sample data frame and perform some basic operations for extracting specific subsets of data.
+**Matrices & Data Frames**—Matrices and data frames are both essentially tables. The main difference between a matrix and a data frame is that all the values of a matrix must be numeric while a data frame can have mixed data types. For this exercise, we will only be using data frames, so we will focus on them. You can think of a data frame as spreadsheet with rows and columns. And like in an Excel spreadsheet, you can give your rows and columns names. Column names are particularly helpful. Below we make a sample data frame and perform some basic operations for extracting specific subsets of data.
 
 ````r
 > # these lines make the data frame, called ‘d’
@@ -144,7 +144,7 @@ My preferred plotting symbol is a solid circle: pch=16. However, there are 25 po
 
 Now that you understand the basic data and object types along with some basic manipulations and plotting, you are ready to read in some real data. The dataset we will use is the marine animal body size data from Heim et al. (2015). The file is permanently stored at the Stanford Digital Repository, hosted by Stanford University Libraries. You can find and download the file at [http://purl.stanford.edu/rf761bx8302](http://purl.stanford.edu/rf761bx8302); the file you want is called *supplementary_data_file.txt* and is a tab-delimited file. Tab delimited files are a plain-text format, but structured like a spreadsheet with tabs separating each cell of the table. This is very similar to the more commonly used comma-separated files (csv). The file is approximately 2.3 Mb in size.
 
-Once you have downloaded the file, save it to the working directory you will be using for this workshop. Open R and set the working directory to the one you are using for the workshop. You can set the working director in two ways. The first uses the keyboard shortcut cmmd-D (may be different in Windows), which will open a Finder window and you can navigate to your desired directory. The second method uses the setwd() function (see the section on functions in the Holland tutorial). In Mac and Windows, respectively, your command will look something similar to the following: 
+Once you have downloaded the file, save it to the working directory you will be using for this exercise. Open R and set the working directory to the one you are using for the exercise. You can set the working director in two ways. The first uses the keyboard shortcut cmmd-D (may be different in Windows), which will open a Finder window and you can navigate to your desired directory. The second method uses the setwd() function (see the section on functions in the Holland tutorial). In Mac and Windows, respectively, your command will look something similar to the following: 
 
 ````r
 > setwd("/Users/hol/[your folder name here]") # Mac
@@ -231,7 +231,7 @@ Now let’s convert this verbal logic into some R code! Remember, we will want t
 Now, convince yourself that this logic will select all genera within a time interval and none of the genera whose ranges are either entirely older or entirely younger than the interval. Refer to the above figure if you need, or draw your own.
 
 
-## Additional Resources
+## <a name="resources"></a>Additional Resources
 
 The built-in help function. To get help understanding a function, type a question mark followed by the function name.
 
