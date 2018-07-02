@@ -76,8 +76,8 @@ Focus on a small set of questions (e.g. 2-3 per chapter) that will help steer th
 
 Date | Chapter | Leaders
 ---- | ------- | -------
-05 July 2018 | Bonner Chapters 1 & 2 | Ashli & Loc
-12 July 2018 | Bonner Chapter 3 | Chris & Stephanie
+12 July 2018 | Bonner Chapters 1 & 2 | Ashli & Loc
+17 July 2018 | Bonner Chapter 3 | Chris & Stephanie
 19 July 2018 | Bonner Chapter 4 | Ameya & Bella
 31 July 2018 | Bonner Chpater 5 | Saket & Shannon
 07 August 2018 | Bonner Chapter 6 & 7 | Noah & Sriram

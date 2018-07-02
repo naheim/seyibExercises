@@ -29,11 +29,10 @@ Date | Reading
 ---- | -----
 25 June 2018 AM | [Knope *et al.* 2015](papers/KnopeEtAl2015.pdf)
 26 June 2018 AM | [Heim *et al.* 2015](papers/HeimEtAl2015.pdf)
-28 June 2018 AM | Bambach *et al.* 2002
-02 July 2018 AM | McShea 1994
-05 July 2018 AM | Bonner Chapters 1 & 2
-12 July 2018 AM | Bonner Chapter 3
-17 July 2018 AM | Hunt 2007
+28 June 2018 AM | [Bambach *et al.* 2002](papers/BambacbEtAl2002.pdf)
+02 July 2018 AM | [Hunt 2007](papers/Hunt2007.pdf)
+12 July 2018 AM | Bonner Chapters 1 & 2
+17 July 2018 AM | Bonner Chapter 3
 19 July 2018 AM | Bonner Chapter 4
 26 July 2018 AM | Zaffos *et al.* 2017
 31 July 2018 AM | Bonner Chpater 5
