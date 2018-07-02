@@ -8,7 +8,7 @@ Resources | Description
 --------- | ----------
 [Internship Syllabus](https://github.com/naheim/SEYI_2018/blob/master/README.md) | A description of how the course is internship and topics to be covered.
 [Fossil Exercises](RExercises/LabExercises.md) | Exercises to introduce marine invertebrate fossils.
-[R Exercises](RExercises/LabExercises.md) | Exercises to teach you R and quantitative tecnhiques in paleobiology.
+[R Exercises](RExercises/README.md) | Exercises to teach you R and quantitative tecnhiques in paleobiology.
 [R Tutorial](https://github.com/naheim/startLearn.R/blob/master/README.md) | Resources for developing your R skills like a pro.
 [Git Tutorial](GitTutorial/gitTutorial.md) | Resource for developing your git skills like a pro.
 
