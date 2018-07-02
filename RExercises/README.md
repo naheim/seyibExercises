@@ -7,5 +7,5 @@ This respository contains R Exercises to practice using R for statistical analys
 Exercise | Description
 --------- | ----------
 [Learning R](https://github.com/naheim/startLearn.R) | An introduction to R, in four parts.
-[PBDB](RExercises/01_PBDB.md) | An introduction to the Paleobiology Database.
-[Plotting in R](RExercises/03_ReviewReadingPlotting) | Learning how to make some basic *"x-y"* plots of stratigraphic ranges.
+[PBDB](01_PBDB.md) | An introduction to the Paleobiology Database.
+[Plotting in R](03_ReviewReadingPlotting.md) | Learning how to make some basic *"x-y"* plots of stratigraphic ranges.
