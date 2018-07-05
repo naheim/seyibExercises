@@ -43,7 +43,7 @@ n.bins <- nrow(timescale) # this is just a variable for the number of time inter
 ### paleoTS Usage
 *paleoTS* requires four vectors of data: mean, variance, sample size, and age of time interval. The simplest way to get these vectors is to write a loop:
 
-#### METHOD 1:  LOOP
+#### Refresher on Writing Loops
 * Writing loops is very useful for all sorts of analyses -- sometimes R is slow at loops but for a relatively small data set like the one used here, it's not too bad. The idea behind a loop is that you want to do the same thing to some set of data over and over again. For example, we want to caclulate the mean, variance and sample size of maximum length for each time interval in the geological timescale.
 
 * The most basic, common and easiest loop to use is called a *for* loop. Conceptually, there are three parts to a for loop: an iterator, a start value, an end value.  By convention, the iterator vairialbe is usually called "i", although you can call it anything you want. The basic process of a for loop is to set the iterator vairable equal to the start value, do whatever it is you want to do (in this case calculate mean, variance and sample size), then add 1 to your iterator variable and repeat the calculation.  This continues until the iterator variable equals the stop value.
