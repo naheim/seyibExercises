@@ -4,7 +4,8 @@
 When you go to Pinnacles National Park, how do you know if you'll see a California condor (*Gymnogyps californianus*)? You looked on a birding website and it givs the odds of seeing a condor in July from Pinnacles Campground. The odds are 1 to 8, which are the odds of seeing North America's largest bird. This means in nine visits to Pinnacles in July, you would expect to see a condor 1 time and not see one the other 8. In probability terms, the _probability_ of seeing a condor is 1/9, or 0.111. But the _odds_ of seeing a condor are 1/8, or 0.125. Odds are actually the ratio of two probabilities... 
 
 ![equation 1](logisticFigures/eqn01.gif)
-[//]:<>(\frac{p (one\ outcome)}{p(other\ outcome)}=\frac{p (success)}{p (failure)}=\frac{p}{q})
+
+[//]: # (\frac{p (one\ outcome)}{p(other\ outcome)}=\frac{p (success)}{p (failure)}=\frac{p}{q})
 
 where *q = 1 - p*
 
@@ -26,13 +27,13 @@ Logistic regression is a method for fitting a regression curve, y = f(x), when y
 
 ![equation 2](logisticFigures/eqn02.gif)
 
-[//]: <> (y='\frac{exp(b_{0} + b_{1}x)}{1 + exp(b_{0} + b_{1}x)}')
+[//]: # (y='\frac{exp(b_{0} + b_{1}x)}{1 + exp(b_{0} + b_{1}x)}')
 
 Logistic regression fits b<sub>0</sub> and b<sub>1</sub>, the regression coefficients (which were 0 and 1, respectively, for the graph above). It should have already struck you that this curve is not linear. However, the point of the logit transform is to make it linear... 
 
 ![equation 3](logisticFigures/eqn03.gif)
 
-[//]: <>(y=logit(y)=b_{0} + b_{1}x)
+[//]: # (y=logit(y)=b_{0} + b_{1}x)
 
 Hence, logistic regression is linear regression on the logit transform of y, where y is the proportion (or probability) of success at each value of x. However, you should avoid the temptation to do a traditional least-squares regression at this point, as neither the normality nor the homoscedasticity (variance of points around regression line is uniform) assumption will be met.
 
