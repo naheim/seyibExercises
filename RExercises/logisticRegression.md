@@ -5,7 +5,7 @@ When you go to Pinnacles National Park, how do you know if you'll see a Californ
 
 ![equation 1](logisticFigures/eqn01.gif)
 
- [](\frac{p (one\ outcome)}{p(other\ outcome)}=\frac{p (success)}{p (failure)}=\frac{p}{q})
+<!-- (\frac{p (one\ outcome)}{p(other\ outcome)}=\frac{p (success)}{p (failure)}=\frac{p}{q}) -->
 
 where *q = 1 - p*
 
