@@ -1,20 +1,20 @@
 # Logistic Regression
 
 ## Odds, Odds Ratios, and Logit
-When you go to the track, how do you know which horse to bet on? You look at the odds. In the program, you may see the odds for your horse, Sea Brisket, are 8 to 1, which are the odds AGAINST winning. This means in nine races Sea Brisket would be expected to win 1 and lose 8. In probability terms, Sea Brisket has a probability of winning of 1/9, or 0.111. But the odds of winning are 1/8, or 0.125. Odds are actually the ratio of two probabilities... 
+When you go to Pinnacles National Park, how do you know if you'll see a California condor (*Gymnogyps californianus*)? You looked on a birding website and it givs the odds of seeing a condor in July from Pinnacles Campground. The odds are 1 to 8, which are the odds of seeing North America's largest bird. This means in nine visits to Pinnacles in July, you would expect to see a condor 1 time and not see one the other 8. In probability terms, the _probability_ of seeing a condor is 1/9, or 0.111. But the _odds_ of seeing a condor are 1/8, or 0.125. Odds are actually the ratio of two probabilities... 
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;odds=\frac{p (one outcome)}{p(other outcome)}=\frac{p (success)}{p (failure)}=\frac{p}{q},"title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;odds=\frac{p (one\ outcome)}{p(other\ outcome)}=\frac{p (success)}{p (failure)}=\frac{p}{q},"title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
 
 where *q = 1 - p*
 
-So for Sea Brisket, odds(winning) = (1/9)/(8/9) = 1/8. Notice that odds have these properties:
+So for our Pinnacles condor, odds(seeing) = (1/9)/(8/9) = 1/8. Notice that odds have these properties:
 
 * If p(success) = p(failure), then odds(success) = 1 (or 1 to 1, or 1:1).
 * If p(success) < p(failure), then odds(success) < 1.
 * If p(success) > p(failure), then odds(success) > 1.
 * Unlike probability, which cannot exceed 1, there is no upper bound on odds.
 
-The natural log of odds is called the logit, or logit transformation, of p: logit(p) = loge(p/q). Logit is sometimes called "log odds." Because of the properties of odds given in the list above, the logit has these properties:
+The natural log (i.e., ln or log<sub>e</sub>) of odds is called the logit, or logit transformation, of p: logit(p) = log<sub>e</sub>(p/q). Logit is sometimes called "log odds." Because of the properties of odds given in the list above, the logit has these properties:
 
 * If odds(success) = 1, then logit(p) = 0.
 * If odds(success) < 1, then logit(p) < 0.
@@ -31,12 +31,14 @@ Logistic regression fits b<sub>0</sub> and b<sub>1</sub>, the regression coeffic
 
 Hence, logistic regression is linear regression on the logit transform of y, where y is the proportion (or probability) of success at each value of x. However, you should avoid the temptation to do a traditional least-squares regression at this point, as neither the normality nor the homoscedasticity (variance of points around regression line is uniform) assumption will be met.
 
-Odds ratio might best be illustrated by returning to our horse race. Suppose in the same race Seattle Stew is given odds of 2 to 1, which is to say, two expected loses for each expected win. Seattle Stew's odds of winning are 1/2, or 0.5. How much better is this than the winning odds for Sea Brisket? The odds ratio tells us: 0.5 / 0.125 = 4.0. The odds of Seattle Stew winning are four times the odds of Sea Brisket winning. Be careful not to say "times as likely to win," which would not be correct. The probability (likelihood, chance) of Seattle Stew winning is 1/3 and for Sea Brisket is 1/9, resulting in a likelihood ratio of 3.0. Seattle Stew is three times more likely to win than is Sea Brisket.
+Odds ratio might best be illustrated by returning to searching for condors at Pinnacles. Your birding website gives the odds of seeing a peregrine falcon (*Falco peregrinus*) of 1 to 2. This means that you are expected to see a peregrine falcon once in every three July visits to the park. The odds of seeing a peregrine falcon are 1/2, or 0.5. How much better is this than odds for seeing a California condor? The odds ratio tells us: 0.5 / 0.125 = 4.0. The odds of seeing a peregrine falcon are four times the odds of seeing a condor. Be careful not to say "times as likely to see," which would not be correct. The probability (likelihood, chance) of seeing a peregrine falcon is 1/3 and for a California condor is 1/9, resulting in a likelihood ratio of 3.0. You areonly three times more likely to see a peregrine falcon than a California condor.
 
 
 ## Logistic Regression: One Numerical Predictor
 
-Logistic regression acts on a binary response variable (e.g., we want to predict if a genus went extinct during the Maastrichtian or not), so here we want to use the logic of how *lad_age* is situated realtive to the time interval of interest to construct a new binary response variable called ``extinct``. Will set the value for extinct equal to 1 for genera that go extinct and equal to 0 for those genra that survive.
+**Now to Paleobiology**. Logistic regression acts on a binary response variable . A binary variable is one that that has only two outcomes. In our example here we will use extinction during the Maastrichtian stage as our predictor. This is binary repsonse because for all genera alive at some time during the Maastrichtian, they all either went extinct or they survived--there are only two possible outcomes. 
+
+so here we want to use the logic of how *lad_age* is situated realtive to the time interval of interest to construct a new binary response variable called ``extinct``. Will set the value for extinct equal to 1 for genera that go extinct and equal to 0 for those genra that survive.
 
 Load the paleosize data file that is in ``paleosizePaper/rawDataFiles`` directory and we'll perform a logistic regression of how well body size predicts going extinct at the end of the Cretaceous period. 
 
