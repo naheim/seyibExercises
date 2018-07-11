@@ -4,8 +4,8 @@
 When you go to Pinnacles National Park, how do you know if you'll see a California condor (*Gymnogyps californianus*)? You looked on a birding website and it givs the odds of seeing a condor in July from Pinnacles Campground. The odds are 1 to 8, which are the odds of seeing North America's largest bird. This means in nine visits to Pinnacles in July, you would expect to see a condor 1 time and not see one the other 8. In probability terms, the _probability_ of seeing a condor is 1/9, or 0.111. But the _odds_ of seeing a condor are 1/8, or 0.125. Odds are actually the ratio of two probabilities... 
 
 ![equation 1](logisticFigures/eqn01.gif)
-
-<!-- (\frac{p (one\ outcome)}{p(other\ outcome)}=\frac{p (success)}{p (failure)}=\frac{p}{q}) -->
+<!-- https://www.codecogs.com/latex/eqneditor.php
+\frac{p (one\ outcome)}{p(other\ outcome)}=\frac{p (success)}{p (failure)}=\frac{p}{q} -->
 
 where *q = 1 - p*
 
@@ -27,13 +27,13 @@ Logistic regression is a method for fitting a regression curve, y = f(x), when y
 
 ![equation 2](logisticFigures/eqn02.gif)
 
-[//]: # (y='\frac{exp(b_{0} + b_{1}x)}{1 + exp(b_{0} + b_{1}x)}')
+<!-- y=\frac{exp(b_{0} + b_{1}x)}{1 + exp(b_{0} + b_{1}x)} -->
 
 Logistic regression fits b<sub>0</sub> and b<sub>1</sub>, the regression coefficients (which were 0 and 1, respectively, for the graph above). It should have already struck you that this curve is not linear. However, the point of the logit transform is to make it linear... 
 
 ![equation 3](logisticFigures/eqn03.gif)
 
-[//]: # (y=logit(y)=b_{0} + b_{1}x)
+<!-- y=logit(y)=b_{0} + b_{1}x -->
 
 Hence, logistic regression is linear regression on the logit transform of y, where y is the proportion (or probability) of success at each value of x. However, you should avoid the temptation to do a traditional least-squares regression at this point, as neither the normality nor the homoscedasticity (variance of points around regression line is uniform) assumption will be met.
 
@@ -101,7 +101,7 @@ maasGlm <- glm(glmEqn, family="binomial", data=maas) # this runs the regression
 summary(maasGlm) # view a summary of the results
 ````
 
-The Summary function provides a summary of the regression output. The main part of the summary to pay attention to is the table called 'Coefficients'. You can view the coefficients on their own by calling" ``summary(maasGlm)$coefficients``. The first row in this table coresonds to the intercept of the logistic resion equation The intercept is analagous to the intercept of the standard linear regression equation, but doesn't have much practical interpretation so we'll ignore it. Instead we'll focus on the second row, which is the coefficient for body size (analagous to the slope in a standard linear equation). The coefficient is actually the log-odds associated with size. The log-odds for size in our example is 0.14. This means that for ...
+The Summary function provides a summary of the regression output. The main part of the summary to pay attention to is the table called 'Coefficients'. You can view the coefficients on their own by calling" ``summary(maasGlm)$coefficients``. The first row in this table coresonds to the intercept of the logistic resion equation The intercept is analagous to the intercept of the standard linear regression equation, but doesn't have much practical interpretation so we'll ignore it. Instead we'll focus on the second row, which is the coefficient for body size (analagous to the slope in a standard linear equation). The coefficient is actually the log-odds associated with size. The log-odds for size in our example is 0.14088.
 
 7) Now let's add the logistic regression to your plot.
 
@@ -109,37 +109,37 @@ The Summary function provides a summary of the regression output. The main part 
 points(maas$logVolume, maasGlm$fitted, col="red", pch=16)
 ````
 
-Recall that the response variable is log odds, so the coefficient of "logL" can be interpreted as "for every one mm increase in size the odds of being a parasite increase by exp(9.4706) = 12,972 times”!!!!
-sLogistic Regression: Categorical Predictors
+Recall that the response variable is log odds, so the coefficient of "logL" can be interpreted as *for every ten-fold increase in size, the odds of being extinct increases by exp(0.14088) = **1.15 times***!
 
-Let's now add the life modes to our analysis to simultaneously consider the affects of size and life mode on the odds of extinction.  There are only 4 brachiopod life modes in the late Devonian (541, 261, 561, 361), so we can make binary variables for each.
+## Logistic Regression: A Numerical & Categorical Predictor
 
-# first remove genera without a life mode
-brachs <- brachs[!is.na(brachs$ecospace),]
+Let's now add a feeding mode to our analysis to simultaneously consider the effects of size and whether or not a genus is a predator on the odds of extinction.  The feeding mode code for predators is 5.
 
-# make new column for binary life modes
-brachs$lm541 <- 0
-brachs$lm541[brachs$ecospace == 541] <- 1
+````r
+# first remove genera without a feeding mode
 
-brachs$lm261 <- 0
-brachs$lm261[brachs$ecospace == 261] <- 1
+maas <- maas[!is.na(maas$feeding),]
 
-brachs$lm561 <- 0
-brachs$lm561[brachs$ecospace == 561] <- 1
+# make new column for binary feeding mode (1 = predator; 0 = non-predator)
+maas$pred <- 0 # set all values to 0
+maas$pred[maas$feeding == 5] <- 1 # this changes our code to 1 for those that have feeding mode 5
 
-brachs$lm361 <- 0
-brachs$lm361[brachs$ecospace == 361] <- 1
+# check out your new column
+head(maas) 
+table(maas$pred) # this counts the number of predators and non-predators
 
-head(brachs)
+# Once again, we want to specify a regression equation, then run the regression.  
+glm.eqn <-"extinct ~ logVolume + pred"
 
-Once again, we want to specify a regression equation, then run the regression.  Note that we can't easily plot these data because we would now need an plot with 6 axes.
+ext.glm <- glm(glm.eqn, family=binomial(logit), data=maas)
 
-glm.eqn <-"extinct ~ size + lm541 + lm261 + lm561 + lm361"
-
-ext.glm <- glm(glm.eqn, family=binomial(logit), data=brachs)
-
-Let's see what we have found... 
-
+# Let's see what we have found... 
 summary(ext.glm)
 
-This shows that only significant predictor of extinction is having a life mode of 561 (Pr(>|z|) >= 0.05). All else being equal, the odds of a 561 going extinct was 13.3 (exp(2.58884)) times greater than surviving the extinction.
+# Note that we can't easily plot these data because we would now need an plot with 3 axes.
+````
+
+This shows that neither extinction predictor is *statistically significant*, but that being a predator has is probably a better predictor of extinction that size during the Maastrichtian. We judge *significance* using the *p-value*, which is given in the coefficients table with the column header "Pr(>|z|)". In our case logSize has a *p-value* of 0.3230 and pred has a *p-value* of 0.0799. By convention we say that coefficients with *p-value* <= 0.05 are statistically significant. In our case the pred coefficient has a *p-value* 0.08. This means that if the data were entirely random we would expect to get the observed coefficient of 0.284995 about 8% of the time. Our *p-value* for predation is close to the arbitrary cut-off of 0.05 while the *p-value* for size is much farther away.
+
+More explanation for why the change when adding a predictor.
+
