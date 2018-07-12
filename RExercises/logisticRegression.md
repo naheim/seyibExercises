@@ -155,3 +155,21 @@ boxplot(maas$logVolume ~ maas$pred, notch=TRUE, names=c("non-predators","predato
 ````
 
 In the above line, ``notch=TRUE`` adds the notches on the boxes, which indicate 95% confidence intervals on the mean. Because the notches of the two boxes do not overlap along the y-axis, we are more than 95% confidence the the median size of predators is larger than the median size of non-predators! Finally, ``las=1`` makes the y-axis numbers horizontal.
+
+## Bonus Section: The Logistic Function
+
+````r
+quartz(height=5, width=10) # if using Windows, use 'window' instead of 'quartz'
+par(mfrow=c(2,5), pch=16)
+meanIncriments <- seq(0, 10, length.out=10)
+sdIncriments <- seq(1, 5, length.out=10)
+myCols <- rainbow(10)
+for(i in 1:10) {
+	my0 <- rnorm(100, mean=0, sd=sdIncriments[i])
+	my1 <- rnorm(100, mean=meanIncriments[i], sd=sdIncriments[i])
+	myGlm <- glm(rep(c(0,1),each=100) ~ c(my0, my1), family="binomial")
+	plot(c(my0, my1), rep(c(0,1),each=100), col=rgb(0.2,0.2,0.2,0.2), xlim=c(-15,25), cex=1.5, xlab="Predictor", ylab="Response", main=paste("Response Difference: ", round(mean(my1) - mean(my0), 1), sep=""))
+	lines(sort(c(my0, my1)), sort(myGlm$fitted), col= myCols[i], pch=16)
+}
+
+````
