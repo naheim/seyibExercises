@@ -10,3 +10,4 @@ Exercise | Description
 [PBDB](01_PBDB.md) | An introduction to the Paleobiology Database.
 [Plotting in R](03_ReviewReadingPlotting.md) | Learning how to make some basic *"x-y"* plots of stratigraphic ranges.
 [*paleoTS*](paleoTS.md) | Evolutionary trend model comparisons using the *paleoTS* package. 
+[Logistic Regression](logisticRegression.md) | Logistic regression, a useful tool in measuring extinction selectivity.
