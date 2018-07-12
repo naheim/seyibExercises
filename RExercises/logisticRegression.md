@@ -1,5 +1,5 @@
 # Logistic Regression
-(some of this was borrowed from an online source, but I no longer remember what it was :flushed:)
+(some of this was borrowed from an online source, but I no longer remember what it was :flushed: Appologies and thanks to the orgianl author of the text I've reused.)
 ## Odds, Odds Ratios, and Logit
 When you go to Pinnacles National Park, how do you know if you'll see a California condor (*Gymnogyps californianus*)? You looked on a birding website and it givs the odds of seeing a condor in July from Pinnacles Campground. The odds are 1 to 8, which are the odds of seeing North America's largest bird. This means in nine visits to Pinnacles in July, you would expect to see a condor 1 time and not see one the other 8. In probability terms, the _probability_ of seeing a condor is 1/9, or 0.111. But the _odds_ of seeing a condor are 1/8, or 0.125. Odds are actually the ratio of two probabilities... 
 
@@ -109,7 +109,7 @@ The Summary function provides a summary of the regression output. The main part 
 points(maas$logVolume, maasGlm$fitted, col="red", pch=16)
 ````
 
-Recall that the response variable is log odds, so the coefficient of "logL" can be interpreted as *for every ten-fold increase in size, the odds of being extinct increases by exp(0.14088) = **1.15 times***!
+Recall that the response variable is log odds, so the coefficient of "logL" can be interpreted as *for every ten-fold increase in size, the odds of being extinct increases by exp(0.14088) = **1.15 times***! (N.B., exp(0.14088) = e<sup>0.14088</sup>.)
 
 ## Logistic Regression: A Numerical & Categorical Predictor
 
@@ -117,7 +117,6 @@ Let's now add a feeding mode to our analysis to simultaneously consider the effe
 
 ````r
 # first remove genera without a feeding mode
-
 maas <- maas[!is.na(maas$feeding),]
 
 # make new column for binary feeding mode (1 = predator; 0 = non-predator)
@@ -139,7 +138,18 @@ summary(ext.glm)
 # Note that we can't easily plot these data because we would now need an plot with 3 axes.
 ````
 
-This shows that neither extinction predictor is *statistically significant*, but that being a predator has is probably a better predictor of extinction that size during the Maastrichtian. We judge *significance* using the *p-value*, which is given in the coefficients table with the column header "Pr(>|z|)". In our case logSize has a *p-value* of 0.3230 and pred has a *p-value* of 0.0799. By convention we say that coefficients with *p-value* <= 0.05 are statistically significant. In our case the pred coefficient has a *p-value* 0.08. This means that if the data were entirely random we would expect to get the observed coefficient of 0.284995 about 8% of the time. Our *p-value* for predation is close to the arbitrary cut-off of 0.05 while the *p-value* for size is much farther away.
+### *p-values*
+This shows that neither extinction predictor is *statistically significant*, but that being a predator has is probably a better predictor of extinction that size during the Maastrichtian. We judge *significance* using the *p-value*, which is given in the coefficients table with the column header "Pr(>|z|)". In our case logSize has a *p-value* of 0.3230 and pred has a *p-value* of 0.0799. By convention we say that coefficients with *p-value* <= 0.05 are statistically significant. In our case the pred coefficient has a *p-value* 0.08. This means that if the data were randomly shuffle the feeding modes among genera over and over again, we would expect to get the observed coefficient of 0.284995 about 8% of the time. Our *p-value* for predation is close to the arbitrary cut-off of 0.05 while the *p-value* for size is much farther away.
 
-More explanation for why the change when adding a predictor.
+### Effects of multiple predictors
+The most important aspect of the above two examples is the difference in the size coefficient between the two regressions. In the first examle, where we only considered the effects of size on extinction, the coefficient is 0.14088. However, when we include a second predictor, being predatory, the size coefficient decreased to -0.045326! Not only is the new coefficient closer to zero, it's the opposite sign. What does this mean?!
 
+The negative coefficient in our second regression means that as size increases, the odds of going extinct in during the Maastrichtian decreses--smaller genera are more likely to go extinct! However, there are two other important aspects of this coefficeint to consider. First, this negative effect is very small. The coefficient is very close to zero (also note it's relatively large *p-value*). Secind, this coefficient is different from the coefficient from the regression with size only because now we are accounting for the effects of feeding mode. Most of the extinction selectivity is due to being a predator rather than be cause of size. The coeffient in the first regression was so much bigger because predators are larger than non-predators but regression didn't "know" who was a predator or not until we told it and included it in the regression!
+
+Just for fun, let's make sure that predators are indeed larger than non-predators with a quick box-and-whisker plot. 
+
+````r
+boxplot(maas$logVolume ~ maas$pred, notch=TRUE, names=c("non-predators","predators"), las=1, ylab="log biovolume (cubic mm)")
+````
+
+In the above line, ``notch=TRUE`` adds the notches on the boxes, which indicate 95% confidence intervals on the mean. Because the notches of the two boxes do not overlap along the y-axis, we are more than 95% confidence the the median size of predators is larger than the median size of non-predators! Finally, ``las=1`` makes the y-axis numbers horizontal.
