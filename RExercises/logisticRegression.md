@@ -1,5 +1,5 @@
 # Logistic Regression
-(some of this was borrowed from an online source, but I no longer remember what it was :flushed: Appologies and thanks to the orgianl author of the text I've reused.)
+(some of this was borrowed from an online source, but I no longer remember what it was :flushed:. Appologies and thanks to the orgianl author of the text I've reused.)
 ## Odds, Odds Ratios, and Logit
 When you go to Pinnacles National Park, how do you know if you'll see a California condor (*Gymnogyps californianus*)? You looked on a birding website and it givs the odds of seeing a condor in July from Pinnacles Campground. The odds are 1 to 8, which are the odds of seeing North America's largest bird. This means in nine visits to Pinnacles in July, you would expect to see a condor 1 time and not see one the other 8. In probability terms, the _probability_ of seeing a condor is 1/9, or 0.111. But the _odds_ of seeing a condor are 1/8, or 0.125. Odds are actually the ratio of two probabilities... 
 
@@ -28,6 +28,8 @@ Logistic regression is a method for fitting a regression curve, y = f(x), when y
 ![equation 2](logisticFigures/eqn02.gif)
 
 <!-- y=\frac{exp(b_{0} + b_{1}x)}{1 + exp(b_{0} + b_{1}x)} -->
+
+(N.B., exp(b<sub>0</sub> + b<sub>1</sub>x) = e<sup>b<sub>0</sub> + b<sub>1</sub>x</sup>; exp(3.45) = e<sup>3.45</sup> &cong; 2.718282<sup>3.45</sup> = 31.50039.)
 
 Logistic regression fits b<sub>0</sub> and b<sub>1</sub>, the regression coefficients (which were 0 and 1, respectively, for the graph above). It should have already struck you that this curve is not linear. However, the point of the logit transform is to make it linear... 
 
@@ -109,7 +111,7 @@ The Summary function provides a summary of the regression output. The main part 
 points(maas$logVolume, maasGlm$fitted, col="red", pch=16)
 ````
 
-Recall that the response variable is log odds, so the coefficient of "logL" can be interpreted as *for every ten-fold increase in size, the odds of being extinct increases by exp(0.14088) = **1.15 times***! (N.B., exp(0.14088) = e<sup>0.14088</sup>.)
+Recall that the response variable is log odds, so the coefficient of "logL" can be interpreted as *for every ten-fold increase in size, the odds of being extinct increases by exp(0.14088) = **1.15 times***!
 
 ## Logistic Regression: A Numerical & Categorical Predictor
 
