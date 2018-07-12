@@ -31,7 +31,7 @@ Logistic regression is a method for fitting a regression curve, y = f(x), when y
 
 (N.B., exp(b<sub>0</sub> + b<sub>1</sub>x) = e<sup>b<sub>0</sub> + b<sub>1</sub>x</sup>; exp(3.45) = e<sup>3.45</sup> &cong; 2.718282<sup>3.45</sup> = 31.50039.)
 
-Logistic regression fits b<sub>0</sub> and b<sub>1</sub>, the regression coefficients (which were 0 and 1, respectively, for the graph above). It should have already struck you that this curve is not linear. However, the point of the logit transform is to make it linear... 
+Logistic regression fits b<sub>0</sub> and b<sub>1</sub>, the regression coefficients. It should have already struck you that this curve is not linear. However, the point of the logit transform is to make it linear... 
 
 ![equation 3](logisticFigures/eqn03.gif)
 
@@ -39,7 +39,7 @@ Logistic regression fits b<sub>0</sub> and b<sub>1</sub>, the regression coeffic
 
 Hence, logistic regression is linear regression on the logit transform of y, where y is the proportion (or probability) of success at each value of x. However, you should avoid the temptation to do a traditional least-squares regression at this point, as neither the normality nor the homoscedasticity (variance of points around regression line is uniform) assumption will be met.
 
-Odds ratio might best be illustrated by returning to searching for condors at Pinnacles. Your birding website gives the odds of seeing a peregrine falcon (*Falco peregrinus*) of 1 to 2. This means that you are expected to see a peregrine falcon once in every three July visits to the park. The odds of seeing a peregrine falcon are 1/2, or 0.5. How much better is this than odds for seeing a California condor? The odds ratio tells us: 0.5 / 0.125 = 4.0. The odds of seeing a peregrine falcon are four times the odds of seeing a condor. Be careful not to say "times as likely to see," which would not be correct. The probability (likelihood, chance) of seeing a peregrine falcon is 1/3 and for a California condor is 1/9, resulting in a likelihood ratio of 3.0. You areonly three times more likely to see a peregrine falcon than a California condor.
+Odds ratio might best be illustrated by returning to searching for condors at Pinnacles. Your birding website gives the odds of seeing a peregrine falcon (*Falco peregrinus*) of 1 to 2. This means that you are expected to see a peregrine falcon once in every three July visits to the park. The odds of seeing a peregrine falcon are 1/2, or 0.5. How much better is this than odds for seeing a California condor? The odds ratio tells us: 0.5 / 0.125 = 4.0. The odds of seeing a peregrine falcon are four times the odds of seeing a condor. Be careful not to say "times as likely to see," which would not be correct. The probability (likelihood, chance) of seeing a peregrine falcon is 1/3 and for a California condor is 1/9, resulting in a likelihood ratio of 3.0. You are only three times more likely to see a peregrine falcon than a California condor.
 
 
 ## Logistic Regression: One Numerical Predictor
@@ -156,20 +156,23 @@ boxplot(maas$logVolume ~ maas$pred, notch=TRUE, names=c("non-predators","predato
 
 In the above line, ``notch=TRUE`` adds the notches on the boxes, which indicate 95% confidence intervals on the mean. Because the notches of the two boxes do not overlap along the y-axis, we are more than 95% confidence the the median size of predators is larger than the median size of non-predators! Finally, ``las=1`` makes the y-axis numbers horizontal.
 
-## Bonus Section: The Logistic Function
+## Bonus Section: Exploring The Logistic Function
+In this section we will make a multi-panel plot that shows how the shape of the logistic curve changes as the difference between "success" and "failure" increases. In the 9 panels below, the 0 values are the same. In the middle panel the 0 and 1 values are the same. In the previous panels, the 1 values are *decreased* by a constant; in the following panesls, the 1 values are *incrased* by a constant.
 
 ````r
-quartz(height=5, width=10) # if using Windows, use 'window' instead of 'quartz'
-par(mfrow=c(2,5), pch=16)
-meanIncriments <- seq(0, 10, length.out=10)
-sdIncriments <- seq(1, 5, length.out=10)
-myCols <- rainbow(10)
-for(i in 1:10) {
-	my0 <- rnorm(100, mean=0, sd=sdIncriments[i])
-	my1 <- rnorm(100, mean=meanIncriments[i], sd=sdIncriments[i])
+# This bock of code is not commented very well, but by now you should be able understand everything that's going on.
+nPlots <- 9
+quartz(height=8, width=8) # if using Windows, use 'window' instead of 'quartz'
+par(mfrow=c(3,3), pch=16)
+meanIncriments <- seq(-10, 10, length.out= nPlots)
+myCols <- rainbow(nPlots) # rainbow() generated colors from the rainbow spectrum
+my0 <-rnorm(100, mean=0, sd=4.5) # rnorm() generates random numbers taken from normal distribution with the specified mean and stadard deviation
+for(i in 1:nPlots) {
+	my1 <- my0 + meanIncriments[i]
 	myGlm <- glm(rep(c(0,1),each=100) ~ c(my0, my1), family="binomial")
-	plot(c(my0, my1), rep(c(0,1),each=100), col=rgb(0.2,0.2,0.2,0.2), xlim=c(-15,25), cex=1.5, xlab="Predictor", ylab="Response", main=paste("Response Difference: ", round(mean(my1) - mean(my0), 1), sep=""))
-	lines(sort(c(my0, my1)), sort(myGlm$fitted), col= myCols[i], pch=16)
+	plot(c(my0, my1), rep(c(0,1),each=100), col=rgb(0.2,0.2,0.2,0.2), xlim=c(-25,25), cex=1.5, xlab="Predictor", ylab="Response", main=paste("Response Diff.: ", round(mean(my1) - mean(my0), 1), sep=""))
+	points(c(my0, my1), myGlm$fitted, col= myCols[i], cex=0.5)
 }
-
 ````
+
+As you look at the panels from left to right, note that the shape of the logistic curve changes. When the "success" (y=1) values are smaller than the "failure" values, the curve has a strong backwards "S" shpae. The backwards-S indicates that the regression coefficient is negative: as the predictor increases, the probailiby of failure (reponse = 0) increases. As you read across ,the backwards-S shpae weakens until it's a horizontal line where there is no relationship between the predictor and succes or failure in the response. As you keep reading from the center panel, the strength of the "S" shape increases and the S is no longer backwards. Now the slope is postivie such that as the predictor variable increases, so does the probability of success.
