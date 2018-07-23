@@ -78,8 +78,8 @@ Date | Chapter | Leaders
 ---- | ------- | -------
 12 July 2018 | Bonner Chapters 1 & 2 | Ashli & Loc
 17 July 2018 | Bonner Chapter 3 | Chris & Stephanie
-19 July 2018 | Bonner Chapter 4 | Ameya & Bella
-31 July 2018 | Bonner Chpater 5 | Saket & Shannon
+19 July 2018 | Bonner Chapter 4 | Ameya & Saket
+31 July 2018 | Bonner Chpater 5 | Bella & Shannon
 07 August 2018 | Bonner Chapter 6 & 7 | Noah & Sriram
 ___
 
